@@ -41,6 +41,10 @@ class ProfileVC: UIViewController {
         
     }
     
+    @IBAction func editProfilePressed(_ sender: UIButton) {
+        
+        self.navigationController?.pushViewController(EditProfileVC(), animated: true)
+    }
     //MARK: - Private Functions
     private func setUpViewController(){
         tableView.register(ImageLabelTVC.className)

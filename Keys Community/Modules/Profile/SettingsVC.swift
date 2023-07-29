@@ -14,7 +14,7 @@ class SettingsVC: UIViewController {
     
     private var tableViewRows = [
         ImageLabelRow(imageName: "wallet", labelTitle: "Change Password"),
-        ImageLabelRow(imageName: "notifications", labelTitle: "Notifications"),
+        ImageLabelRow(imageName: "notifications", labelTitle: "Notifications", nextScreen: NotificationsVC()),
         ImageLabelRow(imageName: "clubs", labelTitle: "Theme"),
         ImageLabelRow(imageName: "projects", labelTitle: "Terms & Conditions", nextScreen: DetailedLabelVC()),
         ImageLabelRow(imageName: "settings", labelTitle: "Tutorial"),

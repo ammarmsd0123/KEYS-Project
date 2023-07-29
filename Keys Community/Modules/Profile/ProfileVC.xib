@@ -168,73 +168,63 @@
                                         <constraint firstItem="wdq-Tb-GIk" firstAttribute="leading" secondItem="0R3-A1-3WZ" secondAttribute="leading" id="yVd-cv-0FV"/>
                                     </constraints>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrD-ws-CEE">
-                                    <rect key="frame" x="12" y="139" width="369" height="36"/>
-                                    <color key="backgroundColor" name="gray_black_background"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="DhV-GU-E1K"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
-                                    <color key="tintColor" name="label_color"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Edit Profile">
-                                        <color key="titleColor" name="label_color"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="10"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                            <integer key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                            <color key="value" name="label_color"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWZ-pd-Zj0">
-                                    <rect key="frame" x="12" y="187" width="369" height="36"/>
-                                    <color key="backgroundColor" name="primary"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="36" id="WJa-ET-vOn"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
-                                    <color key="tintColor" name="label_color"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Switch to business account">
-                                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <integer key="value" value="10"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                            <integer key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                            <color key="value" name="label_color"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="PrD-ws-CEE" secondAttribute="trailing" constant="12" id="2q3-hg-Dwv"/>
                                 <constraint firstItem="r58-Hf-7ti" firstAttribute="top" secondItem="ovx-gZ-hmj" secondAttribute="top" constant="8" id="Bhk-fd-djX"/>
-                                <constraint firstItem="tWZ-pd-Zj0" firstAttribute="leading" secondItem="ovx-gZ-hmj" secondAttribute="leading" constant="12" id="FmX-A8-Ack"/>
                                 <constraint firstAttribute="trailing" secondItem="r58-Hf-7ti" secondAttribute="trailing" constant="12" id="Lu1-E9-XZL"/>
-                                <constraint firstItem="tWZ-pd-Zj0" firstAttribute="top" secondItem="PrD-ws-CEE" secondAttribute="bottom" constant="12" id="QsQ-cY-WwM"/>
                                 <constraint firstAttribute="height" constant="130" id="Xrv-4r-bqK"/>
                                 <constraint firstAttribute="bottom" secondItem="0R3-A1-3WZ" secondAttribute="bottom" constant="12" id="YeU-7r-f2g"/>
-                                <constraint firstAttribute="trailing" secondItem="tWZ-pd-Zj0" secondAttribute="trailing" constant="12" id="ZnU-0V-Mpn"/>
                                 <constraint firstAttribute="trailing" secondItem="0R3-A1-3WZ" secondAttribute="trailing" constant="12" id="ek4-31-TvE"/>
-                                <constraint firstItem="PrD-ws-CEE" firstAttribute="leading" secondItem="ovx-gZ-hmj" secondAttribute="leading" constant="12" id="g1j-Mp-SVs"/>
                                 <constraint firstItem="0R3-A1-3WZ" firstAttribute="leading" secondItem="ovx-gZ-hmj" secondAttribute="leading" constant="12" id="mBG-V0-x3B"/>
                                 <constraint firstItem="0R3-A1-3WZ" firstAttribute="top" secondItem="r58-Hf-7ti" secondAttribute="bottom" id="nVd-A9-Ehx"/>
-                                <constraint firstItem="PrD-ws-CEE" firstAttribute="top" secondItem="0R3-A1-3WZ" secondAttribute="bottom" constant="21" id="piK-Wa-sTI"/>
                                 <constraint firstItem="r58-Hf-7ti" firstAttribute="leading" secondItem="ovx-gZ-hmj" secondAttribute="leading" constant="12" id="yYt-i1-eKR"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVl-rb-afN">
+                            <rect key="frame" x="12" y="233" width="369" height="36"/>
+                            <color key="backgroundColor" name="gray_black_background"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="OV7-W6-KpM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Edit Profile">
+                                <color key="titleColor" name="label_color"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="editProfilePressed:" destination="-1" eventType="touchUpInside" id="RzF-BG-j9A"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWZ-pd-Zj0">
+                            <rect key="frame" x="12" y="281" width="369" height="36"/>
+                            <color key="backgroundColor" name="primary"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="WJa-ET-vOn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="14"/>
+                            <color key="tintColor" name="label_color"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Switch to business account">
+                                <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                    <color key="value" name="label_color"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nb5-9F-Aza">
                             <rect key="frame" x="12" y="337" width="369" height="412"/>
                             <color key="backgroundColor" name="background_color"/>
@@ -247,15 +237,21 @@
                     <color key="backgroundColor" name="background_color"/>
                     <constraints>
                         <constraint firstItem="FbG-OU-6uI" firstAttribute="top" secondItem="bAU-Cv-RbE" secondAttribute="top" id="0R2-lu-WwJ"/>
+                        <constraint firstAttribute="trailing" secondItem="JVl-rb-afN" secondAttribute="trailing" constant="12" id="28Q-dS-zxq"/>
                         <constraint firstItem="ovx-gZ-hmj" firstAttribute="leading" secondItem="bAU-Cv-RbE" secondAttribute="leading" id="42m-Fu-Cni"/>
                         <constraint firstAttribute="trailing" secondItem="nb5-9F-Aza" secondAttribute="trailing" constant="12" id="9oH-j5-OYb"/>
                         <constraint firstAttribute="trailing" secondItem="ovx-gZ-hmj" secondAttribute="trailing" id="AqR-BO-ELV"/>
                         <constraint firstItem="ovx-gZ-hmj" firstAttribute="top" secondItem="FbG-OU-6uI" secondAttribute="bottom" id="Chm-gR-5ai"/>
                         <constraint firstAttribute="bottom" secondItem="nb5-9F-Aza" secondAttribute="bottom" constant="10" id="LFd-VT-tmS"/>
+                        <constraint firstItem="JVl-rb-afN" firstAttribute="top" secondItem="ovx-gZ-hmj" secondAttribute="bottom" constant="21" id="Njd-RJ-Ce1"/>
                         <constraint firstItem="nb5-9F-Aza" firstAttribute="leading" secondItem="bAU-Cv-RbE" secondAttribute="leading" constant="12" id="Q7L-3U-XgK"/>
+                        <constraint firstAttribute="trailing" secondItem="tWZ-pd-Zj0" secondAttribute="trailing" constant="12" id="R8q-OE-svj"/>
                         <constraint firstItem="FbG-OU-6uI" firstAttribute="leading" secondItem="bAU-Cv-RbE" secondAttribute="leading" id="Tp1-qD-5X1"/>
+                        <constraint firstItem="tWZ-pd-Zj0" firstAttribute="leading" secondItem="bAU-Cv-RbE" secondAttribute="leading" constant="12" id="WO5-Bl-0XM"/>
+                        <constraint firstItem="JVl-rb-afN" firstAttribute="leading" secondItem="bAU-Cv-RbE" secondAttribute="leading" constant="12" id="ZpD-oT-xHT"/>
+                        <constraint firstItem="nb5-9F-Aza" firstAttribute="top" secondItem="tWZ-pd-Zj0" secondAttribute="bottom" constant="20" id="gl6-ew-7k2"/>
                         <constraint firstAttribute="trailing" secondItem="FbG-OU-6uI" secondAttribute="trailing" id="jxE-2M-6dn"/>
-                        <constraint firstItem="nb5-9F-Aza" firstAttribute="top" secondItem="tWZ-pd-Zj0" secondAttribute="bottom" constant="32" id="rXe-4x-NQd"/>
+                        <constraint firstItem="tWZ-pd-Zj0" firstAttribute="top" secondItem="JVl-rb-afN" secondAttribute="bottom" constant="12" id="rVr-Dp-d1N"/>
                     </constraints>
                 </view>
             </subviews>

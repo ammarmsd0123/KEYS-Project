@@ -71,6 +71,10 @@
 		EB915CCC2A74FF5000303B54 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB915CCA2A74FF5000303B54 /* SettingsVC.xib */; };
 		EB915CCF2A75055B00303B54 /* DetailedLabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB915CCD2A75055B00303B54 /* DetailedLabelVC.swift */; };
 		EB915CD02A75055B00303B54 /* DetailedLabelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB915CCE2A75055B00303B54 /* DetailedLabelVC.xib */; };
+		EB915CD32A75758000303B54 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB915CD12A75758000303B54 /* NotificationsVC.swift */; };
+		EB915CD42A75758000303B54 /* NotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB915CD22A75758000303B54 /* NotificationsVC.xib */; };
+		EB915CD72A7581E900303B54 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB915CD52A7581E900303B54 /* EditProfileVC.swift */; };
+		EB915CD82A7581E900303B54 /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB915CD62A7581E900303B54 /* EditProfileVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +163,10 @@
 		EB915CCA2A74FF5000303B54 /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
 		EB915CCD2A75055B00303B54 /* DetailedLabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLabelVC.swift; sourceTree = "<group>"; };
 		EB915CCE2A75055B00303B54 /* DetailedLabelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedLabelVC.xib; sourceTree = "<group>"; };
+		EB915CD12A75758000303B54 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		EB915CD22A75758000303B54 /* NotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsVC.xib; sourceTree = "<group>"; };
+		EB915CD52A7581E900303B54 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		EB915CD62A7581E900303B54 /* EditProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
 		ECD83462DB3684D5D251BD66 /* Pods-Keys Community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keys Community.release.xcconfig"; path = "Target Support Files/Pods-Keys Community/Pods-Keys Community.release.xcconfig"; sourceTree = "<group>"; };
 		FF9DE0C9ABD3B1FFE5654957 /* Pods-Keys Community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keys Community.debug.xcconfig"; path = "Target Support Files/Pods-Keys Community/Pods-Keys Community.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +276,10 @@
 				EB915CCA2A74FF5000303B54 /* SettingsVC.xib */,
 				EB915CCD2A75055B00303B54 /* DetailedLabelVC.swift */,
 				EB915CCE2A75055B00303B54 /* DetailedLabelVC.xib */,
+				EB915CD12A75758000303B54 /* NotificationsVC.swift */,
+				EB915CD22A75758000303B54 /* NotificationsVC.xib */,
+				EB915CD52A7581E900303B54 /* EditProfileVC.swift */,
+				EB915CD62A7581E900303B54 /* EditProfileVC.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -617,6 +629,7 @@
 				EB88A6FA2A6B0572007C8D6A /* PhoneSignUpLoginVC.xib in Resources */,
 				9722FE0C2A31DC940034B976 /* HomeBannerCollectionCell.xib in Resources */,
 				EB68AC532A6968A500593233 /* Inter-Bold.ttf in Resources */,
+				EB915CD82A7581E900303B54 /* EditProfileVC.xib in Resources */,
 				EB68AC542A6968A500593233 /* Inter-ExtraLight.ttf in Resources */,
 				EB68AC5A2A6968A500593233 /* Inter-Thin.ttf in Resources */,
 				9722FE172A3226870034B976 /* ProfileVC.xib in Resources */,
@@ -629,6 +642,7 @@
 				975DABD72A2E2AAE0063ED92 /* RegConfirmationVC.xib in Resources */,
 				975DABCF2A2E250F0063ED92 /* AddCardVC.xib in Resources */,
 				EB915CD02A75055B00303B54 /* DetailedLabelVC.xib in Resources */,
+				EB915CD42A75758000303B54 /* NotificationsVC.xib in Resources */,
 				97CAFE892A28DA9200FE155C /* Main.storyboard in Resources */,
 				EB68AC592A6968A500593233 /* Inter-Light.ttf in Resources */,
 				972F57DA2A3590FF00889CB3 /* EventsViewController.xib in Resources */,
@@ -711,6 +725,7 @@
 				97CAFE862A28DA9200FE155C /* ViewController.swift in Sources */,
 				EB915CCB2A74FF5000303B54 /* SettingsVC.swift in Sources */,
 				970200CB2A2CA61400D2DC57 /* PostCodeVC.swift in Sources */,
+				EB915CD72A7581E900303B54 /* EditProfileVC.swift in Sources */,
 				975DABD62A2E2AAE0063ED92 /* RegConfirmationVC.swift in Sources */,
 				97BDC3462A34495200FF18C1 /* FeedDetailViewController.swift in Sources */,
 				9722FE162A3226870034B976 /* ProfileVC.swift in Sources */,
@@ -727,6 +742,7 @@
 				972F57E12A3599C000889CB3 /* UIImageView.swift in Sources */,
 				97BDC34A2A3472EC00FF18C1 /* Utility.swift in Sources */,
 				EB915CCF2A75055B00303B54 /* DetailedLabelVC.swift in Sources */,
+				EB915CD32A75758000303B54 /* NotificationsVC.swift in Sources */,
 				975DABCE2A2E250F0063ED92 /* AddCardVC.swift in Sources */,
 				9722FE112A3212610034B976 /* HomeUpdateTableViewCell.swift in Sources */,
 			);
