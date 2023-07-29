@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0g-5i-ksw">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.ttf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Keys_Community" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_image" translatesAutoresizingMaskIntoConstraints="NO" id="3ot-Pq-Geo">
+                                <rect key="frame" x="0.0" y="-6.6666666666666572" width="428" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="TQa-Tg-uWn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8od-hi-JZz">
+                                <rect key="frame" x="20" y="686" width="388" height="48"/>
+                                <color key="backgroundColor" name="primary"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Z1V-TF-Lz1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                <color key="tintColor" name="label_color"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="  Create an account" image="icon_createAc">
+                                    <color key="titleColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" name="label_color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapCreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iSo-KC-ZbH"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uo7-Pq-vyg">
+                                <rect key="frame" x="20" y="744" width="388" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heq-4z-Z2j">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="C6O-iH-zuQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                        <color key="tintColor" name="label_color"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="  I have an account" image="icon_person">
+                                            <color key="titleColor" name="label_color"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="gray_color"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapHaveAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouw-6H-kP7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="heq-4z-Z2j" firstAttribute="leading" secondItem="Uo7-Pq-vyg" secondAttribute="leading" id="0v5-9H-UES"/>
+                                    <constraint firstItem="heq-4z-Z2j" firstAttribute="top" secondItem="Uo7-Pq-vyg" secondAttribute="top" id="84d-c6-nMD"/>
+                                    <constraint firstAttribute="height" constant="48" id="NoQ-SF-7Hu"/>
+                                    <constraint firstAttribute="bottom" secondItem="heq-4z-Z2j" secondAttribute="bottom" id="f1s-T7-P4l"/>
+                                    <constraint firstAttribute="trailing" secondItem="heq-4z-Z2j" secondAttribute="trailing" id="srA-KD-FtH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMUNITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-Qq-YoS">
+                                <rect key="frame" x="150.66666666666666" y="629" width="126.66666666666666" height="24"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                <color key="textColor" name="label_color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="etg-sX-lJk">
+                                <rect key="frame" x="129" y="546" width="170" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="N94-6f-a3b"/>
+                                    <constraint firstAttribute="height" constant="70" id="nDf-Ri-2wf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="background_color"/>
+                        <constraints>
+                            <constraint firstItem="Uo7-Pq-vyg" firstAttribute="top" secondItem="8od-hi-JZz" secondAttribute="bottom" constant="10" id="1bx-Ki-6sY"/>
+                            <constraint firstItem="3ot-Pq-Geo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1mq-21-ZMS"/>
+                            <constraint firstItem="GeM-Qq-YoS" firstAttribute="top" secondItem="etg-sX-lJk" secondAttribute="bottom" constant="13" id="CZf-EM-eCj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ot-Pq-Geo" secondAttribute="trailing" id="HRe-bM-df2"/>
+                            <constraint firstItem="3ot-Pq-Geo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="9:16" constant="-58" id="Hui-9e-Sbz"/>
+                            <constraint firstItem="8od-hi-JZz" firstAttribute="top" secondItem="GeM-Qq-YoS" secondAttribute="bottom" constant="33" id="IeD-ac-Inz"/>
+                            <constraint firstItem="8od-hi-JZz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MEp-OV-Hfy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uo7-Pq-vyg" secondAttribute="trailing" constant="20" id="Ofn-MM-bJb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uo7-Pq-vyg" secondAttribute="bottom" constant="100" id="P4T-WU-shS"/>
+                            <constraint firstItem="GeM-Qq-YoS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U7q-ZS-8Mu"/>
+                            <constraint firstItem="Uo7-Pq-vyg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b8d-sh-3w9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8od-hi-JZz" secondAttribute="trailing" constant="20" id="lj3-OU-fiV"/>
+                            <constraint firstItem="etg-sX-lJk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nhd-DA-hKh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="B7M-85-0q8"/>
+                    <connections>
+                        <outlet property="alreadyHaveAnAccountBTn" destination="heq-4z-Z2j" id="22L-Bz-q1V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RAA-S1-bkQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I0g-5i-ksw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xq7-WN-Ck3">
+                        <rect key="frame" x="0.0" y="47" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="primary"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vj1-og-Yti"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvE-ov-dGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_logo" width="95" height="25"/>
+        <image name="banner_image" width="125" height="173.33332824707031"/>
+        <image name="icon_createAc" width="21" height="20"/>
+        <image name="icon_person" width="24.333333969116211" height="24"/>
+        <namedColor name="background_color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray_color">
+            <color red="0.74509803921568629" green="0.75294117647058822" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label_color">
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="1" green="0.75700002908706665" blue="0.0080000003799796104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

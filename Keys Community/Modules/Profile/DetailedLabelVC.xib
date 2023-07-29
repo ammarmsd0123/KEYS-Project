@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailedLabelVC" customModule="Keys_Community" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYH-Bp-bLC">
+                    <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="znb-Oj-pA1">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="438"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JnY-81-Si2">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="34"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEYS Community Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o70-0p-Mbz">
+                                            <rect key="frame" x="12" y="14" width="366" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="rLG-xl-HOM"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="15"/>
+                                            <color key="textColor" name="label_color"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="o70-0p-Mbz" secondAttribute="bottom" id="Ids-8Z-JT9"/>
+                                        <constraint firstItem="o70-0p-Mbz" firstAttribute="top" secondItem="JnY-81-Si2" secondAttribute="top" constant="14" id="P3J-yC-Lol"/>
+                                        <constraint firstAttribute="trailing" secondItem="o70-0p-Mbz" secondAttribute="trailing" constant="12" id="Yj0-mo-faN"/>
+                                        <constraint firstItem="o70-0p-Mbz" firstAttribute="leading" secondItem="JnY-81-Si2" secondAttribute="leading" constant="12" id="e22-Ul-Hce"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLU-N6-nfx">
+                                    <rect key="frame" x="0.0" y="46" width="390" height="368"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFL-oJ-lIj">
+                                            <rect key="frame" x="12" y="0.0" width="366" height="356"/>
+                                            <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+Facilisi cras fermentum odio eu feugiat. Arcu cursus vitae congue mauris rhoncus aenean. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.
+
+Senectus et netus et malesuada. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Augue lacus viverra vitae congue eu consequat. Neque viverra justo nec ultrices dui sapien eget.
+
+Vestibulum rhoncus est pellentesque elit ullamcorper. Risus feugiat in ante metus dictum. Sed faucibus turpis in eu mi bibendum. Consequat nisl vel pretium lectus.
+
+Nulla pellentesque dignissim enim sit amet venenatis urna. Nullam eget felis eget nunc lobortis mattis.</mutableString>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                            <color key="textColor" name="label_color"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="FFL-oJ-lIj" secondAttribute="trailing" constant="12" id="1Yg-SV-b7x"/>
+                                        <constraint firstItem="FFL-oJ-lIj" firstAttribute="top" secondItem="rLU-N6-nfx" secondAttribute="top" id="DE4-ic-ZLa"/>
+                                        <constraint firstAttribute="bottom" secondItem="FFL-oJ-lIj" secondAttribute="bottom" constant="12" id="xjV-co-Iiq"/>
+                                        <constraint firstItem="FFL-oJ-lIj" firstAttribute="leading" secondItem="rLU-N6-nfx" secondAttribute="leading" constant="12" id="yQ1-P4-ity"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKl-7U-q4l">
+                                    <rect key="frame" x="0.0" y="426" width="390" height="12"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="xYk-lh-Opp"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="gray_black_background"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kKl-7U-q4l" secondAttribute="trailing" id="3HF-Gg-U4w"/>
+                                <constraint firstItem="JnY-81-Si2" firstAttribute="leading" secondItem="znb-Oj-pA1" secondAttribute="leading" id="aqi-IK-Q3i"/>
+                                <constraint firstItem="rLU-N6-nfx" firstAttribute="leading" secondItem="znb-Oj-pA1" secondAttribute="leading" id="nhQ-kb-qlg"/>
+                                <constraint firstAttribute="trailing" secondItem="JnY-81-Si2" secondAttribute="trailing" id="qw2-eJ-luS"/>
+                                <constraint firstAttribute="trailing" secondItem="rLU-N6-nfx" secondAttribute="trailing" id="sId-cK-VPT"/>
+                                <constraint firstItem="kKl-7U-q4l" firstAttribute="leading" secondItem="znb-Oj-pA1" secondAttribute="leading" id="xZe-8b-qCJ"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="background_color"/>
+                    <constraints>
+                        <constraint firstItem="znb-Oj-pA1" firstAttribute="top" secondItem="UYH-Bp-bLC" secondAttribute="top" id="1Dl-Ni-gep"/>
+                        <constraint firstItem="znb-Oj-pA1" firstAttribute="leading" secondItem="UYH-Bp-bLC" secondAttribute="leading" id="OXF-dE-R1n"/>
+                        <constraint firstAttribute="trailing" secondItem="znb-Oj-pA1" secondAttribute="trailing" id="uV0-Aj-zoz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="gray_black_background"/>
+            <constraints>
+                <constraint firstItem="UYH-Bp-bLC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="I59-E8-JMd"/>
+                <constraint firstItem="UYH-Bp-bLC" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="OqX-kC-yo2"/>
+                <constraint firstItem="UYH-Bp-bLC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bYP-ns-GDL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UYH-Bp-bLC" secondAttribute="trailing" id="x7j-jS-FXQ"/>
+            </constraints>
+            <point key="canvasLocation" x="128" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background_color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray_black_background">
+            <color red="0.9179999828338623" green="0.9179999828338623" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label_color">
+            <color red="0.11400000005960464" green="0.11400000005960464" blue="0.10599999874830246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
