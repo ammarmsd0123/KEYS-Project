@@ -18,6 +18,9 @@ class HomeViewController:  UIViewController {
     @IBOutlet weak var viewChat: UIView!
     @IBOutlet weak var collectionViewTopBanner: UICollectionView!
     @IBOutlet weak var tableViewFeed: UITableView!
+    @IBOutlet weak var profileSuperVu: UIView!
+    
+    
     
     //MARK: - Private
     
@@ -28,21 +31,36 @@ class HomeViewController:  UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViewController()
+        
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     //MARK: - Private Functions
     private func setUpViewController(){
         registerAssetsCollectionView()
-        
-        
-        imgViewProfile?.layer.cornerRadius = (imgViewProfile?.frame.size.width ?? 0.0) / 2
-        imgViewProfile?.clipsToBounds = true
+                
+        imgViewProfile?.layer.cornerRadius = 36
         imgViewProfile?.layer.borderWidth = 2.0
         imgViewProfile?.layer.borderColor = #colorLiteral(red: 1, green: 0.7570000291, blue: 0.00800000038, alpha: 1)
+        
+        let profileTapGesture = UITapGestureRecognizer(target: self, action: #selector(handleProfileTap(_:)))
+        profileSuperVu.addGestureRecognizer(profileTapGesture)
+        profileSuperVu.isUserInteractionEnabled = true
+        
+    }
+    
+
+    @objc func handleProfileTap(_ gesture: UITapGestureRecognizer) {
+        self.navigationController?.pushViewController(ProfileVC(), animated: true)
     }
     
     private func registerAssetsCollectionView(){

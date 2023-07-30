@@ -67,8 +67,8 @@ class ViewController: UIViewController {
         authOptionsVC.selectedOption = { [weak self] loginSignupBy in
             switch loginSignupBy {
                 case AuthOptions.byMobile:
-                    let vc = RegConfirmationVC()//PhoneSignUpLoginVC()
-//                    vc.isSigningUp = true
+                    let vc = PhoneSignUpLoginVC()
+                    vc.isSigningUp = true
                     self?.navigationController?.pushViewController(vc, animated: true)
                 default:
                     break

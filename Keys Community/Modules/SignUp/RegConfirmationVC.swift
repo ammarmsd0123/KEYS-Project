@@ -23,7 +23,22 @@ class RegConfirmationVC:  UIViewController {
     }
     
     @IBAction func startPressed(_ sender: UIButton) {
-        self.navigationController?.pushViewController(ProfileVC(), animated: true)
+//        let newNavigationController = UINavigationController(rootViewController: HomeViewController())
+//        newNavigationController.prese
+//        self.present(newNavigationController, animated: true, completion: nil)
+//        self.navigationController?.pushViewController(newNavigationController, animated: true)
+        
+//        let viewController = YourViewController(nibName: "YourViewController", bundle: nil)
+        
+        // Create the navigation controller and set the view controller as the root view controller
+//        let navigationController = UINavigationController(rootViewController: HomeViewController())
+//
+//
+//        var window = UIWindow(frame: UIScreen.main.bounds)
+//        window.rootViewController = navigationController
+//        window.makeKeyAndVisible()
+        
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
     }
     override func viewDidAppear(_ animated: Bool) {
         
