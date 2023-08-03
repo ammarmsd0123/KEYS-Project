@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */; };
+		063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */; };
 		970200C52A2C61A000D2DC57 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970200C42A2C61A000D2DC57 /* UIViewController.swift */; };
 		970200CB2A2CA61400D2DC57 /* PostCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970200C92A2CA61400D2DC57 /* PostCodeVC.swift */; };
 		970200CC2A2CA61400D2DC57 /* PostCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970200CA2A2CA61400D2DC57 /* PostCodeVC.xib */; };
@@ -95,6 +97,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCardsTVC.swift; sourceTree = "<group>"; };
+		063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCardsTVC.xib; sourceTree = "<group>"; };
 		970200C42A2C61A000D2DC57 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		970200C92A2CA61400D2DC57 /* PostCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeVC.swift; sourceTree = "<group>"; };
 		970200CA2A2CA61400D2DC57 /* PostCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCodeVC.xib; sourceTree = "<group>"; };
@@ -197,6 +201,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063BA3E82A7C3CC00007BBC1 /* TVCs */ = {
+			isa = PBXGroup;
+			children = (
+				063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */,
+				063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */,
+			);
+			path = TVCs;
+			sourceTree = "<group>";
+		};
 		215A90743C41F69FADD9D90B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +272,7 @@
 		9722FE082A31DC470034B976 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				063BA3E82A7C3CC00007BBC1 /* TVCs */,
 				9722FE092A31DC940034B976 /* HomeBannerCollectionCell.swift */,
 				9722FE0A2A31DC940034B976 /* HomeBannerCollectionCell.xib */,
 				9722FE0F2A3212610034B976 /* HomeUpdateTableViewCell.swift */,
@@ -579,6 +593,7 @@
 				TargetAttributes = {
 					97CAFE7D2A28DA9200FE155C = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1430;
 					};
 					97CAFE932A28DA9600FE155C = {
 						CreatedOnToolsVersion = 14.1;
@@ -628,6 +643,7 @@
 				EB915CCC2A74FF5000303B54 /* SettingsVC.xib in Resources */,
 				EB88A6FA2A6B0572007C8D6A /* PhoneSignUpLoginVC.xib in Resources */,
 				9722FE0C2A31DC940034B976 /* HomeBannerCollectionCell.xib in Resources */,
+				063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */,
 				EB68AC532A6968A500593233 /* Inter-Bold.ttf in Resources */,
 				EB915CD82A7581E900303B54 /* EditProfileVC.xib in Resources */,
 				EB68AC542A6968A500593233 /* Inter-ExtraLight.ttf in Resources */,
@@ -732,6 +748,7 @@
 				972F57D42A3590CC00889CB3 /* ServicesViewController.swift in Sources */,
 				972F57DE2A35913100889CB3 /* ClubViewController.swift in Sources */,
 				97CAFE822A28DA9200FE155C /* AppDelegate.swift in Sources */,
+				063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */,
 				97CAFE842A28DA9200FE155C /* SceneDelegate.swift in Sources */,
 				EB915CC62A73FEC800303B54 /* TableVu.swift in Sources */,
 				970200C52A2C61A000D2DC57 /* UIViewController.swift in Sources */,
@@ -928,6 +945,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BGM2H9BUYB;
@@ -947,6 +965,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keysCommunity.Keys-Community";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -958,6 +977,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BGM2H9BUYB;

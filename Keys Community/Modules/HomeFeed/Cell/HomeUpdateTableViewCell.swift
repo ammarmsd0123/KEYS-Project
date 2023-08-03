@@ -20,11 +20,6 @@ class HomeUpdateTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    class func cellForTableView(tableView: UITableView, atIndexPath indexPath: IndexPath) -> HomeUpdateTableViewCell {
-        let kTableViewCell = "HomeUpdateTableViewCell"
-        tableView.register(UINib(nibName: "HomeUpdateTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: kTableViewCell)
-        let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewCell, for: indexPath) as! HomeUpdateTableViewCell
-        return cell
-    }
+
     
 }

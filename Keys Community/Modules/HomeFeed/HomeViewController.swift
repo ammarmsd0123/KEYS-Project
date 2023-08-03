@@ -16,7 +16,6 @@ class HomeViewController:  UIViewController {
     @IBOutlet weak var labelWelcome: UILabel!
     @IBOutlet weak var viewNotifications: UIView!
     @IBOutlet weak var viewChat: UIView!
-    @IBOutlet weak var collectionViewTopBanner: UICollectionView!
     @IBOutlet weak var tableViewFeed: UITableView!
     @IBOutlet weak var profileSuperVu: UIView!
     
@@ -46,7 +45,6 @@ class HomeViewController:  UIViewController {
     
     //MARK: - Private Functions
     private func setUpViewController(){
-        registerAssetsCollectionView()
                 
         imgViewProfile?.layer.cornerRadius = 36
         imgViewProfile?.layer.borderWidth = 2.0
@@ -56,6 +54,11 @@ class HomeViewController:  UIViewController {
         profileSuperVu.addGestureRecognizer(profileTapGesture)
         profileSuperVu.isUserInteractionEnabled = true
         
+        tableViewFeed.dataSource = self
+        tableViewFeed.delegate = self
+        
+        tableViewFeed.register(UpcomingCardsTVC.className)
+        
     }
     
 
@@ -63,23 +66,7 @@ class HomeViewController:  UIViewController {
         self.navigationController?.pushViewController(ProfileVC(), animated: true)
     }
     
-    private func registerAssetsCollectionView(){
-        self.collectionViewTopBanner.register(UINib(nibName: "HomeBannerCollectionCell", bundle: nil), forCellWithReuseIdentifier: "HomeBannerCollectionCell")
-        self.collectionViewTopBanner.delegate = self
-        self.collectionViewTopBanner.dataSource = self
-        
-        let layout = UICollectionViewFlowLayout()
-                layout.scrollDirection = .horizontal
-                self.collectionViewTopBanner.collectionViewLayout = layout
-                self.collectionViewTopBanner!.contentInset = UIEdgeInsets(top: -10, left: 0, bottom:0, right: 0)
-        
-        self.collectionViewTopBanner.reloadData()
-        
-        
-        self.tableViewFeed.delegate = self
-        self.tableViewFeed.dataSource = self
-        self.tableViewFeed.reloadData()
-    }
+
     //MARK: - Public Functions
     
     //MARK: - Ib Actions
@@ -94,31 +81,7 @@ extension HomeViewController {
 
 //MARK: - Api Methods
 
-extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = HomeBannerCollectionCell.cellForCollectionView(collectionView: collectionView, atIndexPath: indexPath)
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let defaultHeight: CGFloat = 70
-        let cellWidth: CGFloat = UIScreen.main.bounds.size.width - 16
-        // Logo image ratio.
-        let logoHeight: CGFloat = cellWidth / 4.67
-        let height: CGFloat = CGFloat(logoHeight + defaultHeight)
-        let width: CGFloat = self.collectionViewTopBanner.frame.size.width - 1
-        return CGSize(width: width, height: height)
-    }
-}
+
 
 //MARK: - TableView Datasource & delegate
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -126,17 +89,29 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = HomeUpdateTableViewCell.cellForTableView(tableView: tableView, atIndexPath: indexPath)
+        return getUpcomingCards(tablleView: tableView, indexPath: indexPath)
+    }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 400.0
+//    }
+    
+}
+
+// MARK: Tableview Cells
+extension HomeViewController {
+    private func getUpcomingCards(tablleView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+//        let kTableViewCell = "HomeUpdateTableViewCell"
+//        tableView.register(UINib(nibName: "HomeUpdateTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: kTableViewCell)
+//        let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewCell, for: indexPath) as! HomeUpdateTableViewCell
+//
+        
+        guard let cell = tablleView.dequeueReusableCell(withIdentifier: UpcomingCardsTVC.className, for: indexPath) as? UpcomingCardsTVC else {return UITableViewCell()}
         
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400.0
-    }
-    
 }

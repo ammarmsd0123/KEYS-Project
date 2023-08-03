@@ -19,12 +19,19 @@ class HomeBannerCollectionCell: UICollectionViewCell {
     @IBOutlet weak var imgViewLocation: UIImageView!
     @IBOutlet weak var labelAddress: UILabel!
     @IBOutlet weak var viewTopCorner: UIView!
+    @IBOutlet weak var outerVu: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         viewTopCorner.clipsToBounds = true
         viewTopCorner.layer.cornerRadius = 10
-        viewTopCorner.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
+        self.layer.cornerRadius = 10
+        viewTopCorner.layer.maskedCorners = [.layerMaxXMaxYCorner]
+        
+        outerVu.layer.shadowColor = UIColor.black.cgColor
+//        outerVu.layer.shadowOpacity = 1
+        outerVu.layer.shadowOffset = .zero
+//        outerVu.layer.shadowRadius = 10
     }
 
     class func cellForCollectionView(collectionView: UICollectionView, atIndexPath indexPath: IndexPath) -> HomeBannerCollectionCell {
