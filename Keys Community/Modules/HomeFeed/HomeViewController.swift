@@ -58,6 +58,8 @@ class HomeViewController:  UIViewController {
         tableViewFeed.delegate = self
         
         tableViewFeed.register(UpcomingCardsTVC.className)
+        tableViewFeed.register(AlertsTVC.className)
+        tableViewFeed.register(ImagePostTVC.className)
         
     }
     
@@ -86,31 +88,66 @@ extension HomeViewController {
 //MARK: - TableView Datasource & delegate
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        switch section {
+        case 0:
+            return 1
+        case 1:
+            return 10
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return getUpcomingCards(tablleView: tableView, indexPath: indexPath)
+        
+        switch indexPath.section {
+        case 0:
+            return getUpcomingCards(tableView: tableView, indexPath: indexPath)
+        case 1:
+            return getFeedPostDataSource(tableView: tableView, indexPath: indexPath)
+        default:
+            return UITableViewCell()
+        }
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 400.0
-//    }
     
 }
 
 // MARK: Tableview Cells
 extension HomeViewController {
-    private func getUpcomingCards(tablleView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-//        let kTableViewCell = "HomeUpdateTableViewCell"
-//        tableView.register(UINib(nibName: "HomeUpdateTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: kTableViewCell)
-//        let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewCell, for: indexPath) as! HomeUpdateTableViewCell
-//
+    
+    private func getFeedPostDataSource(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tablleView.dequeueReusableCell(withIdentifier: UpcomingCardsTVC.className, for: indexPath) as? UpcomingCardsTVC else {return UITableViewCell()}
+        switch indexPath.row {
+        case 0:
+            return getAlertCards(tableView: tableView, indexPath: indexPath)
+//        case 1:
+//            return getImagePostTVC(tableView: tableView, indexPath: indexPath)
+        default:
+            return getImagePostTVC(tableView: tableView, indexPath: indexPath)//UITableViewCell()
+        }
+    }
+    
+    private func getUpcomingCards(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UpcomingCardsTVC.className, for: indexPath) as? UpcomingCardsTVC else {return UITableViewCell()}
+        
+        return cell
+    }
+    
+    private func getAlertCards(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AlertsTVC.className, for: indexPath) as? AlertsTVC else {return UITableViewCell()}
+        
+        return cell
+    }
+    
+    private func getImagePostTVC(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ImagePostTVC.className, for: indexPath) as? ImagePostTVC else {return UITableViewCell()}
         
         return cell
     }

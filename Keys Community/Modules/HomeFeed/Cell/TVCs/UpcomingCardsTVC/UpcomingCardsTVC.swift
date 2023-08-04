@@ -21,21 +21,10 @@ class UpcomingCardsTVC: UITableViewCell {
 
     // MARK: Private Functions
     private func setupCollectionView(){
-        self.collectionView.register(UINib(nibName: "HomeBannerCollectionCell", bundle: nil), forCellWithReuseIdentifier: "HomeBannerCollectionCell")
+        self.collectionView.register(UINib(nibName: UpcomingCardCVC.className, bundle: nil), forCellWithReuseIdentifier: UpcomingCardCVC.className)
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
-//        let layout = UICollectionViewFlowLayout()
-//                layout.scrollDirection = .horizontal
-//                self.collectionViewTopBanner.collectionViewLayout = layout
-//                self.collectionViewTopBanner!.contentInset = UIEdgeInsets(top: -10, left: 0, bottom:0, right: 0)
-//
-//        self.collectionViewTopBanner.reloadData()
-//
-//
-//        self.tableViewFeed.delegate = self
-//        self.tableViewFeed.dataSource = self
-//        self.tableViewFeed.reloadData()
     }
     
 }
@@ -55,18 +44,14 @@ extension UpcomingCardsTVC: UICollectionViewDelegateFlowLayout, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = HomeBannerCollectionCell.cellForCollectionView(collectionView: collectionView, atIndexPath: indexPath)
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCardCVC.className, for: indexPath) as? UpcomingCardCVC else {return UICollectionViewCell()}
         
         return cell
+
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let defaultHeight: CGFloat = 70
-//        let cellWidth: CGFloat = UIScreen.main.bounds.size.width - 16
-//        // Logo image ratio.
-//        let logoHeight: CGFloat = cellWidth / 4.67
-//        let height: CGFloat = CGFloat(logoHeight + defaultHeight)
-//        let width: CGFloat = self.collectionViewTopBanner.frame.size.width - 1
         
         let height = collectionView.frame.height
         let width = collectionView.frame.width - 12 - 8 - 40

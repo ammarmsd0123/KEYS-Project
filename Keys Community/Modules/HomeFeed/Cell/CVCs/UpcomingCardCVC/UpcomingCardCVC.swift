@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeBannerCollectionCell: UICollectionViewCell {
+class UpcomingCardCVC: UICollectionViewCell {
 
     @IBOutlet weak var imgViewBanner: UIImageView!
     @IBOutlet weak var imgIcon: UIImageView!
@@ -34,13 +34,6 @@ class HomeBannerCollectionCell: UICollectionViewCell {
 //        outerVu.layer.shadowRadius = 10
     }
 
-    class func cellForCollectionView(collectionView: UICollectionView, atIndexPath indexPath: IndexPath) -> HomeBannerCollectionCell {
-        let kHomeBannerCollectionCelldentifier = "HomeBannerCollectionCell"
-        collectionView.register(UINib(nibName: "HomeBannerCollectionCell", bundle: Bundle.main), forCellWithReuseIdentifier: kHomeBannerCollectionCelldentifier)
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kHomeBannerCollectionCelldentifier, for: indexPath) as! HomeBannerCollectionCell
-        
-        return cell
-    }
     
     @IBAction func didTapButtonStatus(_ sender: Any) {
     }

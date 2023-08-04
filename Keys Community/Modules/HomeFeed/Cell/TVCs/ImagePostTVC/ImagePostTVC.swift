@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeUpdateTableViewCell: UITableViewCell {
+class ImagePostTVC: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

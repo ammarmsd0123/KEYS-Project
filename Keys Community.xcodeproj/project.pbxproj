@@ -9,16 +9,20 @@
 /* Begin PBXBuildFile section */
 		063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */; };
 		063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */; };
+		06C832722A7CFF1F008A240A /* AlertsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C832702A7CFF1F008A240A /* AlertsTVC.swift */; };
+		06C832732A7CFF1F008A240A /* AlertsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C832712A7CFF1F008A240A /* AlertsTVC.xib */; };
+		06C832782A7D006B008A240A /* AlertCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C832762A7D006B008A240A /* AlertCVC.swift */; };
+		06C832792A7D006B008A240A /* AlertCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C832772A7D006B008A240A /* AlertCVC.xib */; };
 		970200C52A2C61A000D2DC57 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970200C42A2C61A000D2DC57 /* UIViewController.swift */; };
 		970200CB2A2CA61400D2DC57 /* PostCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970200C92A2CA61400D2DC57 /* PostCodeVC.swift */; };
 		970200CC2A2CA61400D2DC57 /* PostCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970200CA2A2CA61400D2DC57 /* PostCodeVC.xib */; };
 		970200CF2A2CA74900D2DC57 /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970200CD2A2CA74900D2DC57 /* UserDetailsVC.swift */; };
 		970200D02A2CA74900D2DC57 /* UserDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970200CE2A2CA74900D2DC57 /* UserDetailsVC.xib */; };
-		9722FE0B2A31DC940034B976 /* HomeBannerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722FE092A31DC940034B976 /* HomeBannerCollectionCell.swift */; };
-		9722FE0C2A31DC940034B976 /* HomeBannerCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722FE0A2A31DC940034B976 /* HomeBannerCollectionCell.xib */; };
+		9722FE0B2A31DC940034B976 /* UpcomingCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722FE092A31DC940034B976 /* UpcomingCardCVC.swift */; };
+		9722FE0C2A31DC940034B976 /* UpcomingCardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722FE0A2A31DC940034B976 /* UpcomingCardCVC.xib */; };
 		9722FE0E2A31DFAB0034B976 /* Custom Controls in Resources */ = {isa = PBXBuildFile; fileRef = 9722FE0D2A31DFAB0034B976 /* Custom Controls */; };
-		9722FE112A3212610034B976 /* HomeUpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722FE0F2A3212610034B976 /* HomeUpdateTableViewCell.swift */; };
-		9722FE122A3212610034B976 /* HomeUpdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722FE102A3212610034B976 /* HomeUpdateTableViewCell.xib */; };
+		9722FE112A3212610034B976 /* ImagePostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722FE0F2A3212610034B976 /* ImagePostTVC.swift */; };
+		9722FE122A3212610034B976 /* ImagePostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722FE102A3212610034B976 /* ImagePostTVC.xib */; };
 		9722FE162A3226870034B976 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722FE142A3226870034B976 /* ProfileVC.swift */; };
 		9722FE172A3226870034B976 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722FE152A3226870034B976 /* ProfileVC.xib */; };
 		972F57CF2A3590A100889CB3 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F57CD2A3590A100889CB3 /* CommunityViewController.swift */; };
@@ -99,16 +103,20 @@
 /* Begin PBXFileReference section */
 		063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCardsTVC.swift; sourceTree = "<group>"; };
 		063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCardsTVC.xib; sourceTree = "<group>"; };
+		06C832702A7CFF1F008A240A /* AlertsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsTVC.swift; sourceTree = "<group>"; };
+		06C832712A7CFF1F008A240A /* AlertsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertsTVC.xib; sourceTree = "<group>"; };
+		06C832762A7D006B008A240A /* AlertCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCVC.swift; sourceTree = "<group>"; };
+		06C832772A7D006B008A240A /* AlertCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertCVC.xib; sourceTree = "<group>"; };
 		970200C42A2C61A000D2DC57 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		970200C92A2CA61400D2DC57 /* PostCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeVC.swift; sourceTree = "<group>"; };
 		970200CA2A2CA61400D2DC57 /* PostCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCodeVC.xib; sourceTree = "<group>"; };
 		970200CD2A2CA74900D2DC57 /* UserDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
 		970200CE2A2CA74900D2DC57 /* UserDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsVC.xib; sourceTree = "<group>"; };
-		9722FE092A31DC940034B976 /* HomeBannerCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionCell.swift; sourceTree = "<group>"; };
-		9722FE0A2A31DC940034B976 /* HomeBannerCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBannerCollectionCell.xib; sourceTree = "<group>"; };
+		9722FE092A31DC940034B976 /* UpcomingCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCardCVC.swift; sourceTree = "<group>"; };
+		9722FE0A2A31DC940034B976 /* UpcomingCardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCardCVC.xib; sourceTree = "<group>"; };
 		9722FE0D2A31DFAB0034B976 /* Custom Controls */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Custom Controls"; sourceTree = "<group>"; };
-		9722FE0F2A3212610034B976 /* HomeUpdateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUpdateTableViewCell.swift; sourceTree = "<group>"; };
-		9722FE102A3212610034B976 /* HomeUpdateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeUpdateTableViewCell.xib; sourceTree = "<group>"; };
+		9722FE0F2A3212610034B976 /* ImagePostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePostTVC.swift; sourceTree = "<group>"; };
+		9722FE102A3212610034B976 /* ImagePostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePostTVC.xib; sourceTree = "<group>"; };
 		9722FE142A3226870034B976 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9722FE152A3226870034B976 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		972F57CD2A3590A100889CB3 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
@@ -204,10 +212,65 @@
 		063BA3E82A7C3CC00007BBC1 /* TVCs */ = {
 			isa = PBXGroup;
 			children = (
+				069129222A7D282B00A489B9 /* ImagePostTVC */,
+				06C8326F2A7CFEF2008A240A /* UpcomingCardsTVC */,
+				06C832742A7CFF29008A240A /* AlertsTVC */,
+			);
+			path = TVCs;
+			sourceTree = "<group>";
+		};
+		069129202A7D26D700A489B9 /* UpcomingCardCVC */ = {
+			isa = PBXGroup;
+			children = (
+				9722FE092A31DC940034B976 /* UpcomingCardCVC.swift */,
+				9722FE0A2A31DC940034B976 /* UpcomingCardCVC.xib */,
+			);
+			path = UpcomingCardCVC;
+			sourceTree = "<group>";
+		};
+		069129212A7D26EC00A489B9 /* AlertCVC */ = {
+			isa = PBXGroup;
+			children = (
+				06C832762A7D006B008A240A /* AlertCVC.swift */,
+				06C832772A7D006B008A240A /* AlertCVC.xib */,
+			);
+			path = AlertCVC;
+			sourceTree = "<group>";
+		};
+		069129222A7D282B00A489B9 /* ImagePostTVC */ = {
+			isa = PBXGroup;
+			children = (
+				9722FE0F2A3212610034B976 /* ImagePostTVC.swift */,
+				9722FE102A3212610034B976 /* ImagePostTVC.xib */,
+			);
+			path = ImagePostTVC;
+			sourceTree = "<group>";
+		};
+		06C8326F2A7CFEF2008A240A /* UpcomingCardsTVC */ = {
+			isa = PBXGroup;
+			children = (
 				063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */,
 				063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */,
 			);
-			path = TVCs;
+			path = UpcomingCardsTVC;
+			sourceTree = "<group>";
+		};
+		06C832742A7CFF29008A240A /* AlertsTVC */ = {
+			isa = PBXGroup;
+			children = (
+				06C832702A7CFF1F008A240A /* AlertsTVC.swift */,
+				06C832712A7CFF1F008A240A /* AlertsTVC.xib */,
+			);
+			path = AlertsTVC;
+			sourceTree = "<group>";
+		};
+		06C832752A7D0050008A240A /* CVCs */ = {
+			isa = PBXGroup;
+			children = (
+				069129202A7D26D700A489B9 /* UpcomingCardCVC */,
+				069129212A7D26EC00A489B9 /* AlertCVC */,
+			);
+			path = CVCs;
 			sourceTree = "<group>";
 		};
 		215A90743C41F69FADD9D90B /* Pods */ = {
@@ -272,11 +335,8 @@
 		9722FE082A31DC470034B976 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				06C832752A7D0050008A240A /* CVCs */,
 				063BA3E82A7C3CC00007BBC1 /* TVCs */,
-				9722FE092A31DC940034B976 /* HomeBannerCollectionCell.swift */,
-				9722FE0A2A31DC940034B976 /* HomeBannerCollectionCell.xib */,
-				9722FE0F2A3212610034B976 /* HomeUpdateTableViewCell.swift */,
-				9722FE102A3212610034B976 /* HomeUpdateTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -632,7 +692,7 @@
 			files = (
 				970200D02A2CA74900D2DC57 /* UserDetailsVC.xib in Resources */,
 				97BDC3472A34495200FF18C1 /* FeedDetailViewController.xib in Resources */,
-				9722FE122A3212610034B976 /* HomeUpdateTableViewCell.xib in Resources */,
+				9722FE122A3212610034B976 /* ImagePostTVC.xib in Resources */,
 				972F57DF2A35913100889CB3 /* ClubViewController.xib in Resources */,
 				97CAFE8E2A28DA9600FE155C /* LaunchScreen.storyboard in Resources */,
 				9722FE0E2A31DFAB0034B976 /* Custom Controls in Resources */,
@@ -642,7 +702,7 @@
 				972F57D02A3590A100889CB3 /* CommunityViewController.xib in Resources */,
 				EB915CCC2A74FF5000303B54 /* SettingsVC.xib in Resources */,
 				EB88A6FA2A6B0572007C8D6A /* PhoneSignUpLoginVC.xib in Resources */,
-				9722FE0C2A31DC940034B976 /* HomeBannerCollectionCell.xib in Resources */,
+				9722FE0C2A31DC940034B976 /* UpcomingCardCVC.xib in Resources */,
 				063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */,
 				EB68AC532A6968A500593233 /* Inter-Bold.ttf in Resources */,
 				EB915CD82A7581E900303B54 /* EditProfileVC.xib in Resources */,
@@ -654,6 +714,7 @@
 				EB68AC572A6968A500593233 /* Inter-Medium.ttf in Resources */,
 				EB6D5CC92A6AF5B800ED4144 /* VerifyOTPVC.xib in Resources */,
 				EB88A6FF2A6B0BF7007C8D6A /* AuthOptionsVC.xib in Resources */,
+				06C832792A7D006B008A240A /* AlertCVC.xib in Resources */,
 				EB68AC522A6968A500593233 /* Inter-ExtraBold.ttf in Resources */,
 				975DABD72A2E2AAE0063ED92 /* RegConfirmationVC.xib in Resources */,
 				975DABCF2A2E250F0063ED92 /* AddCardVC.xib in Resources */,
@@ -664,6 +725,7 @@
 				972F57DA2A3590FF00889CB3 /* EventsViewController.xib in Resources */,
 				970200CC2A2CA61400D2DC57 /* PostCodeVC.xib in Resources */,
 				EB68AC582A6968A500593233 /* Inter-Regular.ttf in Resources */,
+				06C832732A7CFF1F008A240A /* AlertsTVC.xib in Resources */,
 				97F5C4782A30C2F900569EE4 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,11 +793,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9722FE0B2A31DC940034B976 /* HomeBannerCollectionCell.swift in Sources */,
+				9722FE0B2A31DC940034B976 /* UpcomingCardCVC.swift in Sources */,
 				EB88A6F92A6B0572007C8D6A /* PhoneSignUpLoginVC.swift in Sources */,
+				06C832722A7CFF1F008A240A /* AlertsTVC.swift in Sources */,
 				EB6D5CC82A6AF5B800ED4144 /* VerifyOTPVC.swift in Sources */,
 				EB88A7032A7038BB007C8D6A /* BaseVC.swift in Sources */,
 				EB88A6FE2A6B0BF7007C8D6A /* AuthOptionsVC.swift in Sources */,
+				06C832782A7D006B008A240A /* AlertCVC.swift in Sources */,
 				972F57D92A3590FF00889CB3 /* EventsViewController.swift in Sources */,
 				EB915CC32A73FB7000303B54 /* ImageLabelTVC.swift in Sources */,
 				97CAFE862A28DA9200FE155C /* ViewController.swift in Sources */,
@@ -761,7 +825,7 @@
 				EB915CCF2A75055B00303B54 /* DetailedLabelVC.swift in Sources */,
 				EB915CD32A75758000303B54 /* NotificationsVC.swift in Sources */,
 				975DABCE2A2E250F0063ED92 /* AddCardVC.swift in Sources */,
-				9722FE112A3212610034B976 /* HomeUpdateTableViewCell.swift in Sources */,
+				9722FE112A3212610034B976 /* ImagePostTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
