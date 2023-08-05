@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */; };
 		063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */; };
+		0682EBCB2A7E388B0000A16D /* EventPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682EBC92A7E388B0000A16D /* EventPostTVC.swift */; };
+		0682EBCC2A7E388B0000A16D /* EventPostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0682EBCA2A7E388B0000A16D /* EventPostTVC.xib */; };
 		06C832722A7CFF1F008A240A /* AlertsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C832702A7CFF1F008A240A /* AlertsTVC.swift */; };
 		06C832732A7CFF1F008A240A /* AlertsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C832712A7CFF1F008A240A /* AlertsTVC.xib */; };
 		06C832782A7D006B008A240A /* AlertCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C832762A7D006B008A240A /* AlertCVC.swift */; };
@@ -103,6 +105,8 @@
 /* Begin PBXFileReference section */
 		063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCardsTVC.swift; sourceTree = "<group>"; };
 		063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCardsTVC.xib; sourceTree = "<group>"; };
+		0682EBC92A7E388B0000A16D /* EventPostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPostTVC.swift; sourceTree = "<group>"; };
+		0682EBCA2A7E388B0000A16D /* EventPostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventPostTVC.xib; sourceTree = "<group>"; };
 		06C832702A7CFF1F008A240A /* AlertsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsTVC.swift; sourceTree = "<group>"; };
 		06C832712A7CFF1F008A240A /* AlertsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertsTVC.xib; sourceTree = "<group>"; };
 		06C832762A7D006B008A240A /* AlertCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCVC.swift; sourceTree = "<group>"; };
@@ -215,8 +219,35 @@
 				069129222A7D282B00A489B9 /* ImagePostTVC */,
 				06C8326F2A7CFEF2008A240A /* UpcomingCardsTVC */,
 				06C832742A7CFF29008A240A /* AlertsTVC */,
+				0682EBCD2A7E38910000A16D /* EventPostTVC */,
 			);
 			path = TVCs;
+			sourceTree = "<group>";
+		};
+		0682EBC32A7E36100000A16D /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				97F5C4752A30C2F900569EE4 /* HomeViewController.swift */,
+				97F5C4762A30C2F900569EE4 /* HomeViewController.xib */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		0682EBC42A7E36240000A16D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				0682EBC32A7E36100000A16D /* HomeVC */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		0682EBCD2A7E38910000A16D /* EventPostTVC */ = {
+			isa = PBXGroup;
+			children = (
+				0682EBC92A7E388B0000A16D /* EventPostTVC.swift */,
+				0682EBCA2A7E388B0000A16D /* EventPostTVC.xib */,
+			);
+			path = EventPostTVC;
 			sourceTree = "<group>";
 		};
 		069129202A7D26D700A489B9 /* UpcomingCardCVC */ = {
@@ -506,8 +537,7 @@
 			isa = PBXGroup;
 			children = (
 				9722FE082A31DC470034B976 /* Cell */,
-				97F5C4752A30C2F900569EE4 /* HomeViewController.swift */,
-				97F5C4762A30C2F900569EE4 /* HomeViewController.xib */,
+				0682EBC42A7E36240000A16D /* VC */,
 				97BDC3442A34495200FF18C1 /* FeedDetailViewController.swift */,
 				97BDC3452A34495200FF18C1 /* FeedDetailViewController.xib */,
 			);
@@ -710,6 +740,7 @@
 				EB68AC5A2A6968A500593233 /* Inter-Thin.ttf in Resources */,
 				9722FE172A3226870034B976 /* ProfileVC.xib in Resources */,
 				EB68AC5B2A69690100593233 /* Inter-Black.ttf in Resources */,
+				0682EBCC2A7E388B0000A16D /* EventPostTVC.xib in Resources */,
 				EB68AC562A6968A500593233 /* Inter-SemiBold.ttf in Resources */,
 				EB68AC572A6968A500593233 /* Inter-Medium.ttf in Resources */,
 				EB6D5CC92A6AF5B800ED4144 /* VerifyOTPVC.xib in Resources */,
@@ -823,6 +854,7 @@
 				972F57E12A3599C000889CB3 /* UIImageView.swift in Sources */,
 				97BDC34A2A3472EC00FF18C1 /* Utility.swift in Sources */,
 				EB915CCF2A75055B00303B54 /* DetailedLabelVC.swift in Sources */,
+				0682EBCB2A7E388B0000A16D /* EventPostTVC.swift in Sources */,
 				EB915CD32A75758000303B54 /* NotificationsVC.swift in Sources */,
 				975DABCE2A2E250F0063ED92 /* AddCardVC.swift in Sources */,
 				9722FE112A3212610034B976 /* ImagePostTVC.swift in Sources */,

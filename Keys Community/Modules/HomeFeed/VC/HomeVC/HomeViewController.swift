@@ -60,6 +60,7 @@ class HomeViewController:  UIViewController {
         tableViewFeed.register(UpcomingCardsTVC.className)
         tableViewFeed.register(AlertsTVC.className)
         tableViewFeed.register(ImagePostTVC.className)
+        tableViewFeed.register(EventPostTVC.className)
         
     }
     
@@ -124,10 +125,10 @@ extension HomeViewController {
         switch indexPath.row {
         case 0:
             return getAlertCards(tableView: tableView, indexPath: indexPath)
-//        case 1:
-//            return getImagePostTVC(tableView: tableView, indexPath: indexPath)
+        case 1:
+            return getImagePostTVC(tableView: tableView, indexPath: indexPath)
         default:
-            return getImagePostTVC(tableView: tableView, indexPath: indexPath)//UITableViewCell()
+            return getEventPostTVC(tableView: tableView, indexPath: indexPath)//UITableViewCell()
         }
     }
     
@@ -148,6 +149,13 @@ extension HomeViewController {
     private func getImagePostTVC(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ImagePostTVC.className, for: indexPath) as? ImagePostTVC else {return UITableViewCell()}
+        
+        return cell
+    }
+    
+    private func getEventPostTVC(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventPostTVC.className, for: indexPath) as? EventPostTVC else {return UITableViewCell()}
         
         return cell
     }
