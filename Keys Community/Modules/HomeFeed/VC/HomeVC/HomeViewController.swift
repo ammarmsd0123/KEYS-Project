@@ -21,7 +21,11 @@ class HomeViewController:  UIViewController {
     
     
     //MARK: - Private
-    private var selectedFeedOption = Enum.FeedOption.feed
+    private var selectedFeedOption = Enum.FeedOption.updates
+    private var feedUpdatesHeaderLabels = [
+        SelectedItem(title: "Updates", isSelected: true),
+        SelectedItem(title: "Feed", isSelected: false)
+    ]
     
     //MARK: - Public
     
@@ -128,14 +132,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             default:
             guard let feedUpdatesOptionHFTVC = tableView.dequeueReusableHeaderFooterView(withIdentifier: FeedUpdatesOptionHFTVC.className) as? FeedUpdatesOptionHFTVC else {return nil}
             
-            feedUpdatesOptionHFTVC.setupCell(datasource: [
-                    SelectedItem(title: "Updates", isSelected: true),
-                    SelectedItem(title: "Feed", isSelected: false)
-            ])
+            switch self.selectedFeedOption {
+            case .feed:
+                self.feedUpdatesHeaderLabels[1].isSelected = true
+                self.feedUpdatesHeaderLabels[0].isSelected = false
+            case .updates:
+                self.feedUpdatesHeaderLabels[0].isSelected = true
+                self.feedUpdatesHeaderLabels[1].isSelected = false
+            }
+            
+            feedUpdatesOptionHFTVC.setupCell(datasource: feedUpdatesHeaderLabels)
             
             feedUpdatesOptionHFTVC.selectedOption = {[weak self] selectedOption in
                 self?.selectedFeedOption = selectedOption
-                self?.tableViewFeed.reloadSections(IndexSet(integer: 1), with: .none)
+                self?.tableViewFeed.reloadData()
             }
                 
             return feedUpdatesOptionHFTVC
@@ -156,7 +166,7 @@ extension HomeViewController {
         case 0:
             return getUpcomingCards(tableView: tableView, indexPath: indexPath)
         case 1:
-            return getFeedPostDataSource(tableView: tableView, indexPath: indexPath)
+            return getUpdates(tableView: tableView, indexPath: indexPath)
         default:
             return UITableViewCell()
         }
@@ -168,13 +178,25 @@ extension HomeViewController {
         case 0:
             return getUpcomingCards(tableView: tableView, indexPath: indexPath)
         case 1:
-            return getFeedPostDataSource(tableView: tableView, indexPath: indexPath)
+            return getFeed(tableView: tableView, indexPath: indexPath)
         default:
             return UITableViewCell()
         }
     }
     
-    private func getFeedPostDataSource(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+    private func getFeed(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.row {
+        case 0:
+            return getAlertCards(tableView: tableView, indexPath: indexPath)
+        case 1:
+            return getImagePostTVC(tableView: tableView, indexPath: indexPath)
+        default:
+            return getClubPostTVC(tableView: tableView, indexPath: indexPath)//UITableViewCell()
+        }
+    }
+    
+    private func getUpdates(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         
         switch indexPath.row {
         case 0:
@@ -210,6 +232,17 @@ extension HomeViewController {
     private func getEventPostTVC(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: EventPostTVC.className, for: indexPath) as? EventPostTVC else {return UITableViewCell()}
+        
+        cell.setupCell(postType: .event)
+        
+        return cell
+    }
+    
+    private func getClubPostTVC(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventPostTVC.className, for: indexPath) as? EventPostTVC else {return UITableViewCell()}
+        
+        cell.setupCell(postType: .club)
         
         return cell
     }
