@@ -192,7 +192,7 @@ extension HomeViewController {
         case 1:
             return getImagePostTVC(tableView: tableView, indexPath: indexPath)
         default:
-            return getClubPostTVC(tableView: tableView, indexPath: indexPath)//UITableViewCell()
+            return getPostTVC(tableView: tableView, indexPath: indexPath, postType: .project)//UITableViewCell()
         }
     }
     
@@ -204,7 +204,7 @@ extension HomeViewController {
         case 1:
             return getImagePostTVC(tableView: tableView, indexPath: indexPath)
         default:
-            return getEventPostTVC(tableView: tableView, indexPath: indexPath)//UITableViewCell()
+            return getPostTVC(tableView: tableView, indexPath: indexPath, postType: .event)//UITableViewCell()
         }
     }
     
@@ -229,21 +229,14 @@ extension HomeViewController {
         return cell
     }
     
-    private func getEventPostTVC(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+    private func getPostTVC(tableView: UITableView, indexPath: IndexPath, postType: Enum.PostType) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: EventPostTVC.className, for: indexPath) as? EventPostTVC else {return UITableViewCell()}
         
-        cell.setupCell(postType: .event)
+        cell.setupCell(postType: postType)
         
         return cell
     }
     
-    private func getClubPostTVC(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventPostTVC.className, for: indexPath) as? EventPostTVC else {return UITableViewCell()}
-        
-        cell.setupCell(postType: .club)
-        
-        return cell
-    }
+
 }
