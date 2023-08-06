@@ -20,8 +20,8 @@ class HomeViewController:  UIViewController {
     @IBOutlet weak var profileSuperVu: UIView!
     
     
-    
     //MARK: - Private
+    private var selectedFeedOption = Enum.FeedOption.feed
     
     //MARK: - Public
     
@@ -106,14 +106,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch indexPath.section {
-        case 0:
-            return getUpcomingCards(tableView: tableView, indexPath: indexPath)
-        case 1:
-            return getFeedPostDataSource(tableView: tableView, indexPath: indexPath)
+        switch self.selectedFeedOption {
+        case .updates:
+            return self.setupUpdatesSectionDataSource(tableView: tableView, indexPath: indexPath)
         default:
-            return UITableViewCell()
+            return self.setupFeedSectionDataSource(tableView: tableView, indexPath: indexPath)
         }
+
     }
     
     
@@ -128,12 +127,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 return nil
             default:
             guard let feedUpdatesOptionHFTVC = tableView.dequeueReusableHeaderFooterView(withIdentifier: FeedUpdatesOptionHFTVC.className) as? FeedUpdatesOptionHFTVC else {return nil}
+            
             feedUpdatesOptionHFTVC.setupCell(datasource: [
                     SelectedItem(title: "Updates", isSelected: true),
                     SelectedItem(title: "Feed", isSelected: false)
-                ])
+            ])
+            
+            feedUpdatesOptionHFTVC.selectedOption = {[weak self] selectedOption in
+                self?.selectedFeedOption = selectedOption
+                self?.tableViewFeed.reloadSections(IndexSet(integer: 1), with: .none)
+            }
                 
-                return feedUpdatesOptionHFTVC
+            return feedUpdatesOptionHFTVC
                 
         }
         
@@ -144,6 +149,30 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: Tableview Cells
 extension HomeViewController {
+    
+    private func setupUpdatesSectionDataSource(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.section {
+        case 0:
+            return getUpcomingCards(tableView: tableView, indexPath: indexPath)
+        case 1:
+            return getFeedPostDataSource(tableView: tableView, indexPath: indexPath)
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    private func setupFeedSectionDataSource(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.section {
+        case 0:
+            return getUpcomingCards(tableView: tableView, indexPath: indexPath)
+        case 1:
+            return getFeedPostDataSource(tableView: tableView, indexPath: indexPath)
+        default:
+            return UITableViewCell()
+        }
+    }
     
     private func getFeedPostDataSource(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         

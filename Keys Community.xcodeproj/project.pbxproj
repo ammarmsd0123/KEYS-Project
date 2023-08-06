@@ -15,6 +15,7 @@
 		06065F602A7F93CD00CA438B /* FeedDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06065F5E2A7F93CD00CA438B /* FeedDetailViewController.xib */; };
 		06065F662A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */; };
 		06065F672A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */; };
+		06065F6C2A7FD32C00CA438B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F6B2A7FD32C00CA438B /* Enums.swift */; };
 		063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */; };
 		063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */; };
 		0682EBCB2A7E388B0000A16D /* EventPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682EBC92A7E388B0000A16D /* EventPostTVC.swift */; };
@@ -117,6 +118,7 @@
 		06065F5E2A7F93CD00CA438B /* FeedDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedDetailViewController.xib; sourceTree = "<group>"; };
 		06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUpdatesOptionHFTVC.swift; sourceTree = "<group>"; };
 		06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedUpdatesOptionHFTVC.xib; sourceTree = "<group>"; };
+		06065F6B2A7FD32C00CA438B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCardsTVC.swift; sourceTree = "<group>"; };
 		063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCardsTVC.xib; sourceTree = "<group>"; };
 		0682EBC92A7E388B0000A16D /* EventPostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPostTVC.swift; sourceTree = "<group>"; };
@@ -233,6 +235,32 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		06065F682A7FC18000CA438B /* FeedUpdateHeader */ = {
+			isa = PBXGroup;
+			children = (
+				06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */,
+				06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */,
+			);
+			path = FeedUpdateHeader;
+			sourceTree = "<group>";
+		};
+		06065F692A7FC19300CA438B /* PostDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				06065F5D2A7F93CD00CA438B /* FeedDetailViewController.swift */,
+				06065F5E2A7F93CD00CA438B /* FeedDetailViewController.xib */,
+			);
+			path = PostDetailVC;
+			sourceTree = "<group>";
+		};
+		06065F6A2A7FD31D00CA438B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				06065F6B2A7FD32C00CA438B /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		063BA3E82A7C3CC00007BBC1 /* TVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,8 +284,7 @@
 		0682EBC42A7E36240000A16D /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				06065F5D2A7F93CD00CA438B /* FeedDetailViewController.swift */,
-				06065F5E2A7F93CD00CA438B /* FeedDetailViewController.xib */,
+				06065F692A7FC19300CA438B /* PostDetailVC */,
 				0682EBC32A7E36100000A16D /* HomeVC */,
 			);
 			path = VC;
@@ -391,8 +418,7 @@
 		9722FE082A31DC470034B976 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */,
-				06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */,
+				06065F682A7FC18000CA438B /* FeedUpdateHeader */,
 				06C832752A7D0050008A240A /* CVCs */,
 				063BA3E82A7C3CC00007BBC1 /* TVCs */,
 			);
@@ -518,6 +544,7 @@
 		97CAFE802A28DA9200FE155C /* Keys Community */ = {
 			isa = PBXGroup;
 			children = (
+				06065F6A2A7FD31D00CA438B /* Enums */,
 				06065F542A7F876B00CA438B /* Models */,
 				EB88A7012A7038A4007C8D6A /* Base Classes */,
 				97BDC3482A34727C00FF18C1 /* Utilities */,
@@ -859,6 +886,7 @@
 				EB88A7032A7038BB007C8D6A /* BaseVC.swift in Sources */,
 				EB88A6FE2A6B0BF7007C8D6A /* AuthOptionsVC.swift in Sources */,
 				06C832782A7D006B008A240A /* AlertCVC.swift in Sources */,
+				06065F6C2A7FD32C00CA438B /* Enums.swift in Sources */,
 				972F57D92A3590FF00889CB3 /* EventsViewController.swift in Sources */,
 				EB915CC32A73FB7000303B54 /* ImageLabelTVC.swift in Sources */,
 				97CAFE862A28DA9200FE155C /* ViewController.swift in Sources */,

@@ -186,15 +186,27 @@
                             <constraint firstItem="WP4-AC-RbK" firstAttribute="top" secondItem="0Gu-Wl-D5L" secondAttribute="bottom" constant="6" id="vnx-oO-9mo"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-NL-u9a">
+                        <rect key="frame" x="0.0" y="384" width="379" height="1"/>
+                        <color key="backgroundColor" name="gray_black_background"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Wzf-Mt-ol0"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Jpl-Hm-deY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4RW-SV-voK"/>
                     <constraint firstAttribute="trailing" secondItem="Jpl-Hm-deY" secondAttribute="trailing" id="HzP-GQ-cL0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Xgh-NL-u9a" secondAttribute="bottom" id="acy-Cf-Lk8"/>
                     <constraint firstItem="Jpl-Hm-deY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oHb-Sy-cPJ"/>
                     <constraint firstAttribute="bottom" secondItem="Jpl-Hm-deY" secondAttribute="bottom" id="pVn-8y-aXZ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="Xgh-NL-u9a" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="6MJ-Jn-Nlr"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Xgh-NL-u9a" secondAttribute="trailing" id="DFE-xa-xGT"/>
+            </constraints>
             <point key="canvasLocation" x="90.839694656488547" y="177.46478873239437"/>
         </tableViewCell>
     </objects>
@@ -206,6 +218,9 @@
         <image name="image_feed" width="351" height="235"/>
         <namedColor name="black_gray_label">
             <color red="0.31400001049041748" green="0.32899999618530273" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray_black_background">
+            <color red="0.9179999828338623" green="0.9179999828338623" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="label_color">
             <color red="0.11400000005960464" green="0.11400000005960464" blue="0.10599999874830246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

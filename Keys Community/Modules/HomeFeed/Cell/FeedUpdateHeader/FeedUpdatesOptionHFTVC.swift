@@ -14,6 +14,7 @@ class FeedUpdatesOptionHFTVC: UITableViewHeaderFooterView {
     
     // MARK: Variables
     private var items = [SelectedItem]()
+    public var selectedOption: ((_ id: Enum.FeedOption) -> Void)?
     
     // MARK: Lifecycle
     override func awakeFromNib() {
@@ -44,6 +45,13 @@ extension FeedUpdatesOptionHFTVC : UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.makeItemSelected(index: indexPath.row, items: &items)
+        
+        if indexPath.row == 0 {
+            selectedOption?(Enum.FeedOption.updates)
+        }
+        else {
+            selectedOption?(Enum.FeedOption.feed)
+        }
     }
     
     

@@ -9,15 +9,29 @@ import UIKit
 
 class EventPostTVC: UITableViewCell {
 
+    @IBOutlet private weak var clubDetailsVu: UIStackView!
+    @IBOutlet private weak var eventDetailsVu: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setupCell(postType: Enum.PostType) {
+        switch postType {
+        case .club:
+            setupClubView()
+        default:
+            setupEventView()
+        }
     }
     
+    private func setupClubView() {
+        clubDetailsVu.isHidden = false
+        eventDetailsVu.isHidden = true
+    }
+    
+    private func setupEventView() {
+        clubDetailsVu.isHidden = true
+        eventDetailsVu.isHidden = false
+    }
 }
