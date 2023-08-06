@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06065F562A7F8CBC00CA438B /* GeneralModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F552A7F8CBC00CA438B /* GeneralModels.swift */; };
+		06065F582A7F8D2000CA438B /* ExtCollectionVu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F572A7F8D2000CA438B /* ExtCollectionVu.swift */; };
+		06065F5B2A7F922000CA438B /* LabelCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F592A7F922000CA438B /* LabelCVC.swift */; };
+		06065F5C2A7F922000CA438B /* LabelCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06065F5A2A7F922000CA438B /* LabelCVC.xib */; };
+		06065F5F2A7F93CD00CA438B /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F5D2A7F93CD00CA438B /* FeedDetailViewController.swift */; };
+		06065F602A7F93CD00CA438B /* FeedDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06065F5E2A7F93CD00CA438B /* FeedDetailViewController.xib */; };
+		06065F662A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */; };
+		06065F672A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */; };
 		063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */; };
 		063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */; };
 		0682EBCB2A7E388B0000A16D /* EventPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682EBC92A7E388B0000A16D /* EventPostTVC.swift */; };
@@ -40,8 +48,6 @@
 		975DABCF2A2E250F0063ED92 /* AddCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975DABCD2A2E250F0063ED92 /* AddCardVC.xib */; };
 		975DABD62A2E2AAE0063ED92 /* RegConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975DABD42A2E2AAE0063ED92 /* RegConfirmationVC.swift */; };
 		975DABD72A2E2AAE0063ED92 /* RegConfirmationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975DABD52A2E2AAE0063ED92 /* RegConfirmationVC.xib */; };
-		97BDC3462A34495200FF18C1 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDC3442A34495200FF18C1 /* FeedDetailViewController.swift */; };
-		97BDC3472A34495200FF18C1 /* FeedDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BDC3452A34495200FF18C1 /* FeedDetailViewController.xib */; };
 		97BDC34A2A3472EC00FF18C1 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDC3492A3472EC00FF18C1 /* Utility.swift */; };
 		97CAFE822A28DA9200FE155C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CAFE812A28DA9200FE155C /* AppDelegate.swift */; };
 		97CAFE842A28DA9200FE155C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CAFE832A28DA9200FE155C /* SceneDelegate.swift */; };
@@ -103,6 +109,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06065F552A7F8CBC00CA438B /* GeneralModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralModels.swift; sourceTree = "<group>"; };
+		06065F572A7F8D2000CA438B /* ExtCollectionVu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtCollectionVu.swift; sourceTree = "<group>"; };
+		06065F592A7F922000CA438B /* LabelCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCVC.swift; sourceTree = "<group>"; };
+		06065F5A2A7F922000CA438B /* LabelCVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelCVC.xib; sourceTree = "<group>"; };
+		06065F5D2A7F93CD00CA438B /* FeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		06065F5E2A7F93CD00CA438B /* FeedDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedDetailViewController.xib; sourceTree = "<group>"; };
+		06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUpdatesOptionHFTVC.swift; sourceTree = "<group>"; };
+		06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedUpdatesOptionHFTVC.xib; sourceTree = "<group>"; };
 		063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCardsTVC.swift; sourceTree = "<group>"; };
 		063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCardsTVC.xib; sourceTree = "<group>"; };
 		0682EBC92A7E388B0000A16D /* EventPostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPostTVC.swift; sourceTree = "<group>"; };
@@ -136,8 +150,6 @@
 		975DABCD2A2E250F0063ED92 /* AddCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCardVC.xib; sourceTree = "<group>"; };
 		975DABD42A2E2AAE0063ED92 /* RegConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegConfirmationVC.swift; sourceTree = "<group>"; };
 		975DABD52A2E2AAE0063ED92 /* RegConfirmationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegConfirmationVC.xib; sourceTree = "<group>"; };
-		97BDC3442A34495200FF18C1 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
-		97BDC3452A34495200FF18C1 /* FeedDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailViewController.xib; sourceTree = "<group>"; };
 		97BDC3492A3472EC00FF18C1 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		97CAFE7E2A28DA9200FE155C /* Keys Community.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keys Community.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97CAFE812A28DA9200FE155C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +225,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06065F542A7F876B00CA438B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06065F552A7F8CBC00CA438B /* GeneralModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		063BA3E82A7C3CC00007BBC1 /* TVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +256,8 @@
 		0682EBC42A7E36240000A16D /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				06065F5D2A7F93CD00CA438B /* FeedDetailViewController.swift */,
+				06065F5E2A7F93CD00CA438B /* FeedDetailViewController.xib */,
 				0682EBC32A7E36100000A16D /* HomeVC */,
 			);
 			path = VC;
@@ -298,6 +320,8 @@
 		06C832752A7D0050008A240A /* CVCs */ = {
 			isa = PBXGroup;
 			children = (
+				06065F592A7F922000CA438B /* LabelCVC.swift */,
+				06065F5A2A7F922000CA438B /* LabelCVC.xib */,
 				069129202A7D26D700A489B9 /* UpcomingCardCVC */,
 				069129212A7D26EC00A489B9 /* AlertCVC */,
 			);
@@ -344,6 +368,7 @@
 				972F57E02A3599C000889CB3 /* UIImageView.swift */,
 				EB915CC52A73FEC800303B54 /* TableVu.swift */,
 				EB915CC72A73FFCA00303B54 /* NSObject.swift */,
+				06065F572A7F8D2000CA438B /* ExtCollectionVu.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -366,6 +391,8 @@
 		9722FE082A31DC470034B976 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */,
+				06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */,
 				06C832752A7D0050008A240A /* CVCs */,
 				063BA3E82A7C3CC00007BBC1 /* TVCs */,
 			);
@@ -491,6 +518,7 @@
 		97CAFE802A28DA9200FE155C /* Keys Community */ = {
 			isa = PBXGroup;
 			children = (
+				06065F542A7F876B00CA438B /* Models */,
 				EB88A7012A7038A4007C8D6A /* Base Classes */,
 				97BDC3482A34727C00FF18C1 /* Utilities */,
 				9722FE0D2A31DFAB0034B976 /* Custom Controls */,
@@ -538,8 +566,6 @@
 			children = (
 				9722FE082A31DC470034B976 /* Cell */,
 				0682EBC42A7E36240000A16D /* VC */,
-				97BDC3442A34495200FF18C1 /* FeedDetailViewController.swift */,
-				97BDC3452A34495200FF18C1 /* FeedDetailViewController.xib */,
 			);
 			path = HomeFeed;
 			sourceTree = "<group>";
@@ -721,7 +747,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				970200D02A2CA74900D2DC57 /* UserDetailsVC.xib in Resources */,
-				97BDC3472A34495200FF18C1 /* FeedDetailViewController.xib in Resources */,
 				9722FE122A3212610034B976 /* ImagePostTVC.xib in Resources */,
 				972F57DF2A35913100889CB3 /* ClubViewController.xib in Resources */,
 				97CAFE8E2A28DA9600FE155C /* LaunchScreen.storyboard in Resources */,
@@ -739,11 +764,13 @@
 				EB68AC542A6968A500593233 /* Inter-ExtraLight.ttf in Resources */,
 				EB68AC5A2A6968A500593233 /* Inter-Thin.ttf in Resources */,
 				9722FE172A3226870034B976 /* ProfileVC.xib in Resources */,
+				06065F602A7F93CD00CA438B /* FeedDetailViewController.xib in Resources */,
 				EB68AC5B2A69690100593233 /* Inter-Black.ttf in Resources */,
 				0682EBCC2A7E388B0000A16D /* EventPostTVC.xib in Resources */,
 				EB68AC562A6968A500593233 /* Inter-SemiBold.ttf in Resources */,
 				EB68AC572A6968A500593233 /* Inter-Medium.ttf in Resources */,
 				EB6D5CC92A6AF5B800ED4144 /* VerifyOTPVC.xib in Resources */,
+				06065F5C2A7F922000CA438B /* LabelCVC.xib in Resources */,
 				EB88A6FF2A6B0BF7007C8D6A /* AuthOptionsVC.xib in Resources */,
 				06C832792A7D006B008A240A /* AlertCVC.xib in Resources */,
 				EB68AC522A6968A500593233 /* Inter-ExtraBold.ttf in Resources */,
@@ -752,6 +779,7 @@
 				EB915CD02A75055B00303B54 /* DetailedLabelVC.xib in Resources */,
 				EB915CD42A75758000303B54 /* NotificationsVC.xib in Resources */,
 				97CAFE892A28DA9200FE155C /* Main.storyboard in Resources */,
+				06065F672A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib in Resources */,
 				EB68AC592A6968A500593233 /* Inter-Light.ttf in Resources */,
 				972F57DA2A3590FF00889CB3 /* EventsViewController.xib in Resources */,
 				970200CC2A2CA61400D2DC57 /* PostCodeVC.xib in Resources */,
@@ -838,20 +866,24 @@
 				970200CB2A2CA61400D2DC57 /* PostCodeVC.swift in Sources */,
 				EB915CD72A7581E900303B54 /* EditProfileVC.swift in Sources */,
 				975DABD62A2E2AAE0063ED92 /* RegConfirmationVC.swift in Sources */,
-				97BDC3462A34495200FF18C1 /* FeedDetailViewController.swift in Sources */,
 				9722FE162A3226870034B976 /* ProfileVC.swift in Sources */,
 				972F57D42A3590CC00889CB3 /* ServicesViewController.swift in Sources */,
 				972F57DE2A35913100889CB3 /* ClubViewController.swift in Sources */,
+				06065F662A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift in Sources */,
 				97CAFE822A28DA9200FE155C /* AppDelegate.swift in Sources */,
 				063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */,
 				97CAFE842A28DA9200FE155C /* SceneDelegate.swift in Sources */,
+				06065F5B2A7F922000CA438B /* LabelCVC.swift in Sources */,
 				EB915CC62A73FEC800303B54 /* TableVu.swift in Sources */,
 				970200C52A2C61A000D2DC57 /* UIViewController.swift in Sources */,
+				06065F582A7F8D2000CA438B /* ExtCollectionVu.swift in Sources */,
 				97F5C4772A30C2F900569EE4 /* HomeViewController.swift in Sources */,
+				06065F562A7F8CBC00CA438B /* GeneralModels.swift in Sources */,
 				970200CF2A2CA74900D2DC57 /* UserDetailsVC.swift in Sources */,
 				972F57CF2A3590A100889CB3 /* CommunityViewController.swift in Sources */,
 				EB915CC82A73FFCA00303B54 /* NSObject.swift in Sources */,
 				972F57E12A3599C000889CB3 /* UIImageView.swift in Sources */,
+				06065F5F2A7F93CD00CA438B /* FeedDetailViewController.swift in Sources */,
 				97BDC34A2A3472EC00FF18C1 /* Utility.swift in Sources */,
 				EB915CCF2A75055B00303B54 /* DetailedLabelVC.swift in Sources */,
 				0682EBCB2A7E388B0000A16D /* EventPostTVC.swift in Sources */,

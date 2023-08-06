@@ -62,6 +62,8 @@ class HomeViewController:  UIViewController {
         tableViewFeed.register(ImagePostTVC.className)
         tableViewFeed.register(EventPostTVC.className)
         
+        tableViewFeed.register(UINib(nibName: FeedUpdatesOptionHFTVC.className, bundle: nil), forHeaderFooterViewReuseIdentifier: FeedUpdatesOptionHFTVC.className)
+        
     }
     
 
@@ -112,6 +114,29 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             return UITableViewCell()
         }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return section == 0 ? 0 : UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        switch section {
+            case 0:
+                return nil
+            default:
+            guard let feedUpdatesOptionHFTVC = tableView.dequeueReusableHeaderFooterView(withIdentifier: FeedUpdatesOptionHFTVC.className) as? FeedUpdatesOptionHFTVC else {return nil}
+            feedUpdatesOptionHFTVC.setupCell(datasource: [
+                    SelectedItem(title: "Updates", isSelected: true),
+                    SelectedItem(title: "Feed", isSelected: false)
+                ])
+                
+                return feedUpdatesOptionHFTVC
+                
+        }
+        
     }
     
     
