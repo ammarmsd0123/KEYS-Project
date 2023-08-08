@@ -17,7 +17,7 @@ class Utility{
         tabController = UITabBarController()
         
         let homeViewController = HomeViewController()
-        let communityViewController = CommunityViewController()
+        let communityViewController = CommunityVC()
         let servicesViewController = ServicesViewController()
         let eventsViewController = EventsViewController()
         

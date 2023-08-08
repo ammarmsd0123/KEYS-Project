@@ -16,6 +16,18 @@
 		06065F662A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */; };
 		06065F672A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */; };
 		06065F6C2A7FD32C00CA438B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F6B2A7FD32C00CA438B /* Enums.swift */; };
+		06203AC52A80F13100A866A2 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203AC32A80F13100A866A2 /* CommunityVC.swift */; };
+		06203AC62A80F13100A866A2 /* CommunityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203AC42A80F13100A866A2 /* CommunityVC.xib */; };
+		06203ACB2A80F2B900A866A2 /* LabelHeaderHFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203ACA2A80F2B900A866A2 /* LabelHeaderHFTVC.swift */; };
+		06203ACD2A80F2C600A866A2 /* LabelHeaderHFTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203ACC2A80F2C600A866A2 /* LabelHeaderHFTVC.xib */; };
+		06203AD12A80FE9100A866A2 /* BudgetTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203ACF2A80FE9100A866A2 /* BudgetTVC.swift */; };
+		06203AD22A80FE9100A866A2 /* BudgetTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203AD02A80FE9100A866A2 /* BudgetTVC.xib */; };
+		06203AD62A81050300A866A2 /* GenericInfoCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203AD42A81050300A866A2 /* GenericInfoCVC.swift */; };
+		06203AD72A81050300A866A2 /* GenericInfoCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203AD52A81050300A866A2 /* GenericInfoCVC.xib */; };
+		06203ADC2A81418700A866A2 /* ImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203ADA2A81418700A866A2 /* ImageCVC.swift */; };
+		06203ADD2A81418700A866A2 /* ImageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203ADB2A81418700A866A2 /* ImageCVC.xib */; };
+		06203AE12A82574700A866A2 /* PollCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203ADF2A82574700A866A2 /* PollCVC.swift */; };
+		06203AE22A82574700A866A2 /* PollCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203AE02A82574700A866A2 /* PollCVC.xib */; };
 		063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */; };
 		063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */; };
 		0682EBCB2A7E388B0000A16D /* EventPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682EBC92A7E388B0000A16D /* EventPostTVC.swift */; };
@@ -36,8 +48,6 @@
 		9722FE122A3212610034B976 /* ImagePostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722FE102A3212610034B976 /* ImagePostTVC.xib */; };
 		9722FE162A3226870034B976 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722FE142A3226870034B976 /* ProfileVC.swift */; };
 		9722FE172A3226870034B976 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9722FE152A3226870034B976 /* ProfileVC.xib */; };
-		972F57CF2A3590A100889CB3 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F57CD2A3590A100889CB3 /* CommunityViewController.swift */; };
-		972F57D02A3590A100889CB3 /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972F57CE2A3590A100889CB3 /* CommunityViewController.xib */; };
 		972F57D42A3590CC00889CB3 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F57D22A3590CC00889CB3 /* ServicesViewController.swift */; };
 		972F57D52A3590CC00889CB3 /* ServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972F57D32A3590CC00889CB3 /* ServicesViewController.xib */; };
 		972F57D92A3590FF00889CB3 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F57D72A3590FF00889CB3 /* EventsViewController.swift */; };
@@ -119,6 +129,18 @@
 		06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUpdatesOptionHFTVC.swift; sourceTree = "<group>"; };
 		06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedUpdatesOptionHFTVC.xib; sourceTree = "<group>"; };
 		06065F6B2A7FD32C00CA438B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		06203AC32A80F13100A866A2 /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
+		06203AC42A80F13100A866A2 /* CommunityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityVC.xib; sourceTree = "<group>"; };
+		06203ACA2A80F2B900A866A2 /* LabelHeaderHFTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHeaderHFTVC.swift; sourceTree = "<group>"; };
+		06203ACC2A80F2C600A866A2 /* LabelHeaderHFTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelHeaderHFTVC.xib; sourceTree = "<group>"; };
+		06203ACF2A80FE9100A866A2 /* BudgetTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTVC.swift; sourceTree = "<group>"; };
+		06203AD02A80FE9100A866A2 /* BudgetTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetTVC.xib; sourceTree = "<group>"; };
+		06203AD42A81050300A866A2 /* GenericInfoCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericInfoCVC.swift; sourceTree = "<group>"; };
+		06203AD52A81050300A866A2 /* GenericInfoCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericInfoCVC.xib; sourceTree = "<group>"; };
+		06203ADA2A81418700A866A2 /* ImageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCVC.swift; sourceTree = "<group>"; };
+		06203ADB2A81418700A866A2 /* ImageCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCVC.xib; sourceTree = "<group>"; };
+		06203ADF2A82574700A866A2 /* PollCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCVC.swift; sourceTree = "<group>"; };
+		06203AE02A82574700A866A2 /* PollCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollCVC.xib; sourceTree = "<group>"; };
 		063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCardsTVC.swift; sourceTree = "<group>"; };
 		063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCardsTVC.xib; sourceTree = "<group>"; };
 		0682EBC92A7E388B0000A16D /* EventPostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPostTVC.swift; sourceTree = "<group>"; };
@@ -139,8 +161,6 @@
 		9722FE102A3212610034B976 /* ImagePostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePostTVC.xib; sourceTree = "<group>"; };
 		9722FE142A3226870034B976 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9722FE152A3226870034B976 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
-		972F57CD2A3590A100889CB3 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
-		972F57CE2A3590A100889CB3 /* CommunityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityViewController.xib; sourceTree = "<group>"; };
 		972F57D22A3590CC00889CB3 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		972F57D32A3590CC00889CB3 /* ServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesViewController.xib; sourceTree = "<group>"; };
 		972F57D72A3590FF00889CB3 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +281,95 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		06203AC22A80F10E00A866A2 /* CommunityVC */ = {
+			isa = PBXGroup;
+			children = (
+				06203AC32A80F13100A866A2 /* CommunityVC.swift */,
+				06203AC42A80F13100A866A2 /* CommunityVC.xib */,
+			);
+			path = CommunityVC;
+			sourceTree = "<group>";
+		};
+		06203AC72A80F21400A866A2 /* ImageLabelTVC */ = {
+			isa = PBXGroup;
+			children = (
+				EB915CC12A73FB7000303B54 /* ImageLabelTVC.swift */,
+				EB915CC22A73FB7000303B54 /* ImageLabelTVC.xib */,
+			);
+			path = ImageLabelTVC;
+			sourceTree = "<group>";
+		};
+		06203AC82A80F23E00A866A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				06203AC72A80F21400A866A2 /* ImageLabelTVC */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		06203AC92A80F28700A866A2 /* LabelHeader */ = {
+			isa = PBXGroup;
+			children = (
+				06203ACA2A80F2B900A866A2 /* LabelHeaderHFTVC.swift */,
+				06203ACC2A80F2C600A866A2 /* LabelHeaderHFTVC.xib */,
+			);
+			path = LabelHeader;
+			sourceTree = "<group>";
+		};
+		06203ACE2A80FE6F00A866A2 /* TVCs */ = {
+			isa = PBXGroup;
+			children = (
+				06203ADE2A82571200A866A2 /* BudgetTVC */,
+			);
+			path = TVCs;
+			sourceTree = "<group>";
+		};
+		06203AD32A8104DF00A866A2 /* CVCs */ = {
+			isa = PBXGroup;
+			children = (
+				06203AD92A81410900A866A2 /* ImageCVC */,
+				06203AD82A8140F900A866A2 /* GenericInfoCVC */,
+				06203AE32A82574F00A866A2 /* PollCVC */,
+			);
+			path = CVCs;
+			sourceTree = "<group>";
+		};
+		06203AD82A8140F900A866A2 /* GenericInfoCVC */ = {
+			isa = PBXGroup;
+			children = (
+				06203AD42A81050300A866A2 /* GenericInfoCVC.swift */,
+				06203AD52A81050300A866A2 /* GenericInfoCVC.xib */,
+			);
+			path = GenericInfoCVC;
+			sourceTree = "<group>";
+		};
+		06203AD92A81410900A866A2 /* ImageCVC */ = {
+			isa = PBXGroup;
+			children = (
+				06203ADA2A81418700A866A2 /* ImageCVC.swift */,
+				06203ADB2A81418700A866A2 /* ImageCVC.xib */,
+			);
+			path = ImageCVC;
+			sourceTree = "<group>";
+		};
+		06203ADE2A82571200A866A2 /* BudgetTVC */ = {
+			isa = PBXGroup;
+			children = (
+				06203ACF2A80FE9100A866A2 /* BudgetTVC.swift */,
+				06203AD02A80FE9100A866A2 /* BudgetTVC.xib */,
+			);
+			path = BudgetTVC;
+			sourceTree = "<group>";
+		};
+		06203AE32A82574F00A866A2 /* PollCVC */ = {
+			isa = PBXGroup;
+			children = (
+				06203ADF2A82574700A866A2 /* PollCVC.swift */,
+				06203AE02A82574700A866A2 /* PollCVC.xib */,
+			);
+			path = PollCVC;
+			sourceTree = "<group>";
+		};
 		063BA3E82A7C3CC00007BBC1 /* TVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,7 +484,7 @@
 		970200C02A2C55FD00D2DC57 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EB915CC02A73FB1800303B54 /* TVCs & CVCs */,
+				EB915CC02A73FB1800303B54 /* HeadersFooters */,
 				97BDC34E2A34741B00FF18C1 /* Clubs */,
 				97BDC34D2A34741100FF18C1 /* Events */,
 				97BDC34C2A34740700FF18C1 /* Services */,
@@ -418,7 +527,6 @@
 		9722FE082A31DC470034B976 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				06065F682A7FC18000CA438B /* FeedUpdateHeader */,
 				06C832752A7D0050008A240A /* CVCs */,
 				063BA3E82A7C3CC00007BBC1 /* TVCs */,
 			);
@@ -428,6 +536,7 @@
 		9722FE132A32263E0034B976 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				06203AC82A80F23E00A866A2 /* Cells */,
 				9722FE142A3226870034B976 /* ProfileVC.swift */,
 				9722FE152A3226870034B976 /* ProfileVC.xib */,
 				EB915CC92A74FF5000303B54 /* SettingsVC.swift */,
@@ -442,13 +551,12 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		972F57CC2A35908900889CB3 /* ViewConstrollers */ = {
+		972F57CC2A35908900889CB3 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				972F57CD2A3590A100889CB3 /* CommunityViewController.swift */,
-				972F57CE2A3590A100889CB3 /* CommunityViewController.xib */,
+				06203AC22A80F10E00A866A2 /* CommunityVC */,
 			);
-			path = ViewConstrollers;
+			path = VCs;
 			sourceTree = "<group>";
 		};
 		972F57D12A3590B800889CB3 /* ViewControllers */ = {
@@ -490,7 +598,9 @@
 		97BDC34B2A3473FA00FF18C1 /* Community */ = {
 			isa = PBXGroup;
 			children = (
-				972F57CC2A35908900889CB3 /* ViewConstrollers */,
+				06203AD32A8104DF00A866A2 /* CVCs */,
+				06203ACE2A80FE6F00A866A2 /* TVCs */,
+				972F57CC2A35908900889CB3 /* VCs */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -657,13 +767,13 @@
 			path = "Base Classes";
 			sourceTree = "<group>";
 		};
-		EB915CC02A73FB1800303B54 /* TVCs & CVCs */ = {
+		EB915CC02A73FB1800303B54 /* HeadersFooters */ = {
 			isa = PBXGroup;
 			children = (
-				EB915CC12A73FB7000303B54 /* ImageLabelTVC.swift */,
-				EB915CC22A73FB7000303B54 /* ImageLabelTVC.xib */,
+				06203AC92A80F28700A866A2 /* LabelHeader */,
+				06065F682A7FC18000CA438B /* FeedUpdateHeader */,
 			);
-			path = "TVCs & CVCs";
+			path = HeadersFooters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -780,20 +890,25 @@
 				9722FE0E2A31DFAB0034B976 /* Custom Controls in Resources */,
 				972F57D52A3590CC00889CB3 /* ServicesViewController.xib in Resources */,
 				97CAFE8B2A28DA9600FE155C /* Assets.xcassets in Resources */,
+				06203ACD2A80F2C600A866A2 /* LabelHeaderHFTVC.xib in Resources */,
 				EB915CC42A73FB7000303B54 /* ImageLabelTVC.xib in Resources */,
-				972F57D02A3590A100889CB3 /* CommunityViewController.xib in Resources */,
 				EB915CCC2A74FF5000303B54 /* SettingsVC.xib in Resources */,
+				06203AD72A81050300A866A2 /* GenericInfoCVC.xib in Resources */,
 				EB88A6FA2A6B0572007C8D6A /* PhoneSignUpLoginVC.xib in Resources */,
 				9722FE0C2A31DC940034B976 /* UpcomingCardCVC.xib in Resources */,
 				063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */,
 				EB68AC532A6968A500593233 /* Inter-Bold.ttf in Resources */,
 				EB915CD82A7581E900303B54 /* EditProfileVC.xib in Resources */,
+				06203AC62A80F13100A866A2 /* CommunityVC.xib in Resources */,
+				06203AD22A80FE9100A866A2 /* BudgetTVC.xib in Resources */,
 				EB68AC542A6968A500593233 /* Inter-ExtraLight.ttf in Resources */,
 				EB68AC5A2A6968A500593233 /* Inter-Thin.ttf in Resources */,
+				06203AE22A82574700A866A2 /* PollCVC.xib in Resources */,
 				9722FE172A3226870034B976 /* ProfileVC.xib in Resources */,
 				06065F602A7F93CD00CA438B /* FeedDetailViewController.xib in Resources */,
 				EB68AC5B2A69690100593233 /* Inter-Black.ttf in Resources */,
 				0682EBCC2A7E388B0000A16D /* EventPostTVC.xib in Resources */,
+				06203ADD2A81418700A866A2 /* ImageCVC.xib in Resources */,
 				EB68AC562A6968A500593233 /* Inter-SemiBold.ttf in Resources */,
 				EB68AC572A6968A500593233 /* Inter-Medium.ttf in Resources */,
 				EB6D5CC92A6AF5B800ED4144 /* VerifyOTPVC.xib in Resources */,
@@ -879,11 +994,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06203AD12A80FE9100A866A2 /* BudgetTVC.swift in Sources */,
 				9722FE0B2A31DC940034B976 /* UpcomingCardCVC.swift in Sources */,
 				EB88A6F92A6B0572007C8D6A /* PhoneSignUpLoginVC.swift in Sources */,
 				06C832722A7CFF1F008A240A /* AlertsTVC.swift in Sources */,
 				EB6D5CC82A6AF5B800ED4144 /* VerifyOTPVC.swift in Sources */,
 				EB88A7032A7038BB007C8D6A /* BaseVC.swift in Sources */,
+				06203ACB2A80F2B900A866A2 /* LabelHeaderHFTVC.swift in Sources */,
+				06203ADC2A81418700A866A2 /* ImageCVC.swift in Sources */,
 				EB88A6FE2A6B0BF7007C8D6A /* AuthOptionsVC.swift in Sources */,
 				06C832782A7D006B008A240A /* AlertCVC.swift in Sources */,
 				06065F6C2A7FD32C00CA438B /* Enums.swift in Sources */,
@@ -900,15 +1018,17 @@
 				06065F662A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift in Sources */,
 				97CAFE822A28DA9200FE155C /* AppDelegate.swift in Sources */,
 				063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */,
+				06203AC52A80F13100A866A2 /* CommunityVC.swift in Sources */,
 				97CAFE842A28DA9200FE155C /* SceneDelegate.swift in Sources */,
 				06065F5B2A7F922000CA438B /* LabelCVC.swift in Sources */,
 				EB915CC62A73FEC800303B54 /* TableVu.swift in Sources */,
 				970200C52A2C61A000D2DC57 /* UIViewController.swift in Sources */,
 				06065F582A7F8D2000CA438B /* ExtCollectionVu.swift in Sources */,
 				97F5C4772A30C2F900569EE4 /* HomeViewController.swift in Sources */,
+				06203AE12A82574700A866A2 /* PollCVC.swift in Sources */,
 				06065F562A7F8CBC00CA438B /* GeneralModels.swift in Sources */,
 				970200CF2A2CA74900D2DC57 /* UserDetailsVC.swift in Sources */,
-				972F57CF2A3590A100889CB3 /* CommunityViewController.swift in Sources */,
+				06203AD62A81050300A866A2 /* GenericInfoCVC.swift in Sources */,
 				EB915CC82A73FFCA00303B54 /* NSObject.swift in Sources */,
 				972F57E12A3599C000889CB3 /* UIImageView.swift in Sources */,
 				06065F5F2A7F93CD00CA438B /* FeedDetailViewController.swift in Sources */,
