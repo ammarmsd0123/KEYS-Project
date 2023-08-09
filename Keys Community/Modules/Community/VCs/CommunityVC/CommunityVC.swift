@@ -27,6 +27,9 @@ class CommunityVC: UIViewController {
         tableView.register(UINib(nibName: LabelHeaderHFTVC.className, bundle: nil), forHeaderFooterViewReuseIdentifier: LabelHeaderHFTVC.className)
         
         tableView.register(BudgetTVC.className)
+        tableView.register(PollTVC.className)
+        
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.registerCell(type: ImageCVC.self)
@@ -56,9 +59,10 @@ extension CommunityVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.section {
         case 0:
             return self.setupBudgetSection(tableView: tableView, indexPath: indexPath)
+        case 1:
+            return self.setupPollSection(tableView: tableView, indexPath: indexPath)
         default:
             return UITableViewCell()
-//            return self.setupFeedSectionDataSource(tableView: tableView, indexPath: indexPath)
         }
 
     }
@@ -99,73 +103,12 @@ extension CommunityVC {
         return cell
     }
     
-    private func setupFeedSectionDataSource(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        
-        switch indexPath.section {
-        case 0:
-            return getUpcomingCards(tableView: tableView, indexPath: indexPath)
-        case 1:
-            return getFeed(tableView: tableView, indexPath: indexPath)
-        default:
-            return UITableViewCell()
-        }
-    }
-    
-    private func getFeed(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        
-        switch indexPath.row {
-        case 0:
-            return getAlertCards(tableView: tableView, indexPath: indexPath)
-        case 1:
-            return getImagePostTVC(tableView: tableView, indexPath: indexPath)
-        default:
-            return getPostTVC(tableView: tableView, indexPath: indexPath, postType: .project)//UITableViewCell()
-        }
-    }
-    
-    private func getUpdates(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        
-        switch indexPath.row {
-        case 0:
-            return getAlertCards(tableView: tableView, indexPath: indexPath)
-        case 1:
-            return getImagePostTVC(tableView: tableView, indexPath: indexPath)
-        default:
-            return getPostTVC(tableView: tableView, indexPath: indexPath, postType: .event)//UITableViewCell()
-        }
-    }
-    
-    private func getUpcomingCards(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: UpcomingCardsTVC.className, for: indexPath) as? UpcomingCardsTVC else {return UITableViewCell()}
-        
-        return cell
-    }
-    
-    private func getAlertCards(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: AlertsTVC.className, for: indexPath) as? AlertsTVC else {return UITableViewCell()}
-        
-        return cell
-    }
-    
-    private func getImagePostTVC(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ImagePostTVC.className, for: indexPath) as? ImagePostTVC else {return UITableViewCell()}
-        
-        return cell
-    }
-    
-    private func getPostTVC(tableView: UITableView, indexPath: IndexPath, postType: Enum.PostType) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: EventPostTVC.className, for: indexPath) as? EventPostTVC else {return UITableViewCell()}
-        
-        cell.setupCell(postType: postType)
-        
-        return cell
-    }
-    
+    private func setupPollSection(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PollTVC.className, for: indexPath) as? PollTVC else {return UITableViewCell()}
 
+        return cell
+    }
+    
 }
 
 // MARK: Top CollectionView
