@@ -28,6 +28,7 @@ class CommunityVC: UIViewController {
         
         tableView.register(BudgetTVC.className)
         tableView.register(PollTVC.className)
+        tableView.register(ProjectsTVC.className)
         
         
         collectionView.dataSource = self
@@ -62,7 +63,8 @@ extension CommunityVC: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return self.setupPollSection(tableView: tableView, indexPath: indexPath)
         default:
-            return UITableViewCell()
+            return self.setupProjectsSection(tableView: tableView, indexPath: indexPath)
+
         }
 
     }
@@ -105,6 +107,16 @@ extension CommunityVC {
     
     private func setupPollSection(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PollTVC.className, for: indexPath) as? PollTVC else {return UITableViewCell()}
+        
+        cell.collectionViewHeight.constant =  cell.collectionView.collectionViewLayout.collectionViewContentSize.height
+
+        return cell
+    }
+    
+    private func setupProjectsSection(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ProjectsTVC.className, for: indexPath) as? ProjectsTVC else {return UITableViewCell()}
+        
+        cell.projectsCollectionViewHeight.constant = cell.projectsCollectionView.collectionViewLayout.collectionViewContentSize.height
 
         return cell
     }

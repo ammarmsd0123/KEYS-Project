@@ -26,8 +26,10 @@
 		06203AD72A81050300A866A2 /* GenericInfoCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203AD52A81050300A866A2 /* GenericInfoCVC.xib */; };
 		06203ADC2A81418700A866A2 /* ImageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203ADA2A81418700A866A2 /* ImageCVC.swift */; };
 		06203ADD2A81418700A866A2 /* ImageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203ADB2A81418700A866A2 /* ImageCVC.xib */; };
-		06203AE12A82574700A866A2 /* PollCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203ADF2A82574700A866A2 /* PollCVC.swift */; };
-		06203AE22A82574700A866A2 /* PollCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203AE02A82574700A866A2 /* PollCVC.xib */; };
+		063707952A863E0400EF605A /* ProjectCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063707932A863E0400EF605A /* ProjectCVC.swift */; };
+		063707962A863E0400EF605A /* ProjectCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063707942A863E0400EF605A /* ProjectCVC.xib */; };
+		0637079A2A86428A00EF605A /* ProjectsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063707982A86428A00EF605A /* ProjectsTVC.swift */; };
+		0637079B2A86428A00EF605A /* ProjectsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063707992A86428A00EF605A /* ProjectsTVC.xib */; };
 		063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */; };
 		063BA3F12A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */; };
 		06542AF72A83A86D00D2A334 /* PollTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06542AF52A83A86D00D2A334 /* PollTVC.swift */; };
@@ -36,8 +38,6 @@
 		06542AFD2A83C2EE00D2A334 /* PollResultRowCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06542AFB2A83C2EE00D2A334 /* PollResultRowCVC.xib */; };
 		0682EBCB2A7E388B0000A16D /* EventPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682EBC92A7E388B0000A16D /* EventPostTVC.swift */; };
 		0682EBCC2A7E388B0000A16D /* EventPostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0682EBCA2A7E388B0000A16D /* EventPostTVC.xib */; };
-		0682FED52A82D1E00038AB85 /* PollResultTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682FED32A82D1E00038AB85 /* PollResultTVC.swift */; };
-		0682FED62A82D1E00038AB85 /* PollResultTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0682FED42A82D1E00038AB85 /* PollResultTVC.xib */; };
 		06C832722A7CFF1F008A240A /* AlertsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C832702A7CFF1F008A240A /* AlertsTVC.swift */; };
 		06C832732A7CFF1F008A240A /* AlertsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C832712A7CFF1F008A240A /* AlertsTVC.xib */; };
 		06C832782A7D006B008A240A /* AlertCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C832762A7D006B008A240A /* AlertCVC.swift */; };
@@ -145,8 +145,10 @@
 		06203AD52A81050300A866A2 /* GenericInfoCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericInfoCVC.xib; sourceTree = "<group>"; };
 		06203ADA2A81418700A866A2 /* ImageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCVC.swift; sourceTree = "<group>"; };
 		06203ADB2A81418700A866A2 /* ImageCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCVC.xib; sourceTree = "<group>"; };
-		06203ADF2A82574700A866A2 /* PollCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollCVC.swift; sourceTree = "<group>"; };
-		06203AE02A82574700A866A2 /* PollCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollCVC.xib; sourceTree = "<group>"; };
+		063707932A863E0400EF605A /* ProjectCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCVC.swift; sourceTree = "<group>"; };
+		063707942A863E0400EF605A /* ProjectCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCVC.xib; sourceTree = "<group>"; };
+		063707982A86428A00EF605A /* ProjectsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTVC.swift; sourceTree = "<group>"; };
+		063707992A86428A00EF605A /* ProjectsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectsTVC.xib; sourceTree = "<group>"; };
 		063BA3EE2A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCardsTVC.swift; sourceTree = "<group>"; };
 		063BA3EF2A7C3D2C0007BBC1 /* UpcomingCardsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingCardsTVC.xib; sourceTree = "<group>"; };
 		06542AF52A83A86D00D2A334 /* PollTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollTVC.swift; sourceTree = "<group>"; };
@@ -155,8 +157,6 @@
 		06542AFB2A83C2EE00D2A334 /* PollResultRowCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollResultRowCVC.xib; sourceTree = "<group>"; };
 		0682EBC92A7E388B0000A16D /* EventPostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPostTVC.swift; sourceTree = "<group>"; };
 		0682EBCA2A7E388B0000A16D /* EventPostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventPostTVC.xib; sourceTree = "<group>"; };
-		0682FED32A82D1E00038AB85 /* PollResultTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollResultTVC.swift; sourceTree = "<group>"; };
-		0682FED42A82D1E00038AB85 /* PollResultTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollResultTVC.xib; sourceTree = "<group>"; };
 		06C832702A7CFF1F008A240A /* AlertsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsTVC.swift; sourceTree = "<group>"; };
 		06C832712A7CFF1F008A240A /* AlertsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertsTVC.xib; sourceTree = "<group>"; };
 		06C832762A7D006B008A240A /* AlertCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCVC.swift; sourceTree = "<group>"; };
@@ -331,8 +331,8 @@
 		06203ACE2A80FE6F00A866A2 /* TVCs */ = {
 			isa = PBXGroup;
 			children = (
+				063707972A86426700EF605A /* ProjectsTVC */,
 				0682FED72A82DA440038AB85 /* PollTVC */,
-				0682FED22A82D1BA0038AB85 /* PollResultTVC */,
 				06203ADE2A82571200A866A2 /* BudgetTVC */,
 			);
 			path = TVCs;
@@ -341,10 +341,10 @@
 		06203AD32A8104DF00A866A2 /* CVCs */ = {
 			isa = PBXGroup;
 			children = (
+				063707922A863D7C00EF605A /* ProjectCVC */,
 				06542AF92A83C2D600D2A334 /* PollResultRowCVC */,
 				06203AD92A81410900A866A2 /* ImageCVC */,
 				06203AD82A8140F900A866A2 /* GenericInfoCVC */,
-				06203AE32A82574F00A866A2 /* PollCVC */,
 			);
 			path = CVCs;
 			sourceTree = "<group>";
@@ -376,13 +376,22 @@
 			path = BudgetTVC;
 			sourceTree = "<group>";
 		};
-		06203AE32A82574F00A866A2 /* PollCVC */ = {
+		063707922A863D7C00EF605A /* ProjectCVC */ = {
 			isa = PBXGroup;
 			children = (
-				06203ADF2A82574700A866A2 /* PollCVC.swift */,
-				06203AE02A82574700A866A2 /* PollCVC.xib */,
+				063707932A863E0400EF605A /* ProjectCVC.swift */,
+				063707942A863E0400EF605A /* ProjectCVC.xib */,
 			);
-			path = PollCVC;
+			path = ProjectCVC;
+			sourceTree = "<group>";
+		};
+		063707972A86426700EF605A /* ProjectsTVC */ = {
+			isa = PBXGroup;
+			children = (
+				063707982A86428A00EF605A /* ProjectsTVC.swift */,
+				063707992A86428A00EF605A /* ProjectsTVC.xib */,
+			);
+			path = ProjectsTVC;
 			sourceTree = "<group>";
 		};
 		063BA3E82A7C3CC00007BBC1 /* TVCs */ = {
@@ -430,15 +439,6 @@
 				0682EBCA2A7E388B0000A16D /* EventPostTVC.xib */,
 			);
 			path = EventPostTVC;
-			sourceTree = "<group>";
-		};
-		0682FED22A82D1BA0038AB85 /* PollResultTVC */ = {
-			isa = PBXGroup;
-			children = (
-				0682FED32A82D1E00038AB85 /* PollResultTVC.swift */,
-				0682FED42A82D1E00038AB85 /* PollResultTVC.xib */,
-			);
-			path = PollResultTVC;
 			sourceTree = "<group>";
 		};
 		0682FED72A82DA440038AB85 /* PollTVC */ = {
@@ -946,7 +946,6 @@
 				EB68AC542A6968A500593233 /* Inter-ExtraLight.ttf in Resources */,
 				EB68AC5A2A6968A500593233 /* Inter-Thin.ttf in Resources */,
 				06542AF82A83A86D00D2A334 /* PollTVC.xib in Resources */,
-				06203AE22A82574700A866A2 /* PollCVC.xib in Resources */,
 				9722FE172A3226870034B976 /* ProfileVC.xib in Resources */,
 				06065F602A7F93CD00CA438B /* FeedDetailViewController.xib in Resources */,
 				EB68AC5B2A69690100593233 /* Inter-Black.ttf in Resources */,
@@ -955,7 +954,6 @@
 				EB68AC562A6968A500593233 /* Inter-SemiBold.ttf in Resources */,
 				EB68AC572A6968A500593233 /* Inter-Medium.ttf in Resources */,
 				EB6D5CC92A6AF5B800ED4144 /* VerifyOTPVC.xib in Resources */,
-				0682FED62A82D1E00038AB85 /* PollResultTVC.xib in Resources */,
 				06065F5C2A7F922000CA438B /* LabelCVC.xib in Resources */,
 				EB88A6FF2A6B0BF7007C8D6A /* AuthOptionsVC.xib in Resources */,
 				06C832792A7D006B008A240A /* AlertCVC.xib in Resources */,
@@ -966,9 +964,11 @@
 				EB915CD02A75055B00303B54 /* DetailedLabelVC.xib in Resources */,
 				EB915CD42A75758000303B54 /* NotificationsVC.xib in Resources */,
 				97CAFE892A28DA9200FE155C /* Main.storyboard in Resources */,
+				0637079B2A86428A00EF605A /* ProjectsTVC.xib in Resources */,
 				06065F672A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib in Resources */,
 				EB68AC592A6968A500593233 /* Inter-Light.ttf in Resources */,
 				972F57DA2A3590FF00889CB3 /* EventsViewController.xib in Resources */,
+				063707962A863E0400EF605A /* ProjectCVC.xib in Resources */,
 				970200CC2A2CA61400D2DC57 /* PostCodeVC.xib in Resources */,
 				EB68AC582A6968A500593233 /* Inter-Regular.ttf in Resources */,
 				06C832732A7CFF1F008A240A /* AlertsTVC.xib in Resources */,
@@ -1061,8 +1061,8 @@
 				972F57D42A3590CC00889CB3 /* ServicesViewController.swift in Sources */,
 				972F57DE2A35913100889CB3 /* ClubViewController.swift in Sources */,
 				06065F662A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift in Sources */,
-				0682FED52A82D1E00038AB85 /* PollResultTVC.swift in Sources */,
 				97CAFE822A28DA9200FE155C /* AppDelegate.swift in Sources */,
+				0637079A2A86428A00EF605A /* ProjectsTVC.swift in Sources */,
 				063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */,
 				06203AC52A80F13100A866A2 /* CommunityVC.swift in Sources */,
 				97CAFE842A28DA9200FE155C /* SceneDelegate.swift in Sources */,
@@ -1071,12 +1071,12 @@
 				970200C52A2C61A000D2DC57 /* UIViewController.swift in Sources */,
 				06065F582A7F8D2000CA438B /* ExtCollectionVu.swift in Sources */,
 				97F5C4772A30C2F900569EE4 /* HomeViewController.swift in Sources */,
-				06203AE12A82574700A866A2 /* PollCVC.swift in Sources */,
 				06065F562A7F8CBC00CA438B /* GeneralModels.swift in Sources */,
 				970200CF2A2CA74900D2DC57 /* UserDetailsVC.swift in Sources */,
 				06542AFC2A83C2EE00D2A334 /* PollResultRowCVC.swift in Sources */,
 				06203AD62A81050300A866A2 /* GenericInfoCVC.swift in Sources */,
 				EB915CC82A73FFCA00303B54 /* NSObject.swift in Sources */,
+				063707952A863E0400EF605A /* ProjectCVC.swift in Sources */,
 				972F57E12A3599C000889CB3 /* UIImageView.swift in Sources */,
 				06065F5F2A7F93CD00CA438B /* FeedDetailViewController.swift in Sources */,
 				06542AF72A83A86D00D2A334 /* PollTVC.swift in Sources */,

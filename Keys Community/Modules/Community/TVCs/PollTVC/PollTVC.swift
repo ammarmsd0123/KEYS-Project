@@ -18,18 +18,9 @@ class PollTVC: UITableViewCell {
         collectionView.delegate = self
         collectionView.registerCell(type: PollResultRowCVC.self)
         
-
-        self.collectionViewHeight.constant =         self.collectionView.collectionViewLayout.collectionViewContentSize.height
         
     }
     
-    override func layoutSubviews() {
-//        DispatchQueue.main.async {
-            self.collectionViewHeight.constant =         self.collectionView.collectionViewLayout.collectionViewContentSize.height
-
-//        }
-        layoutIfNeeded()
-    }
 
 }
 
@@ -40,7 +31,7 @@ extension PollTVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
