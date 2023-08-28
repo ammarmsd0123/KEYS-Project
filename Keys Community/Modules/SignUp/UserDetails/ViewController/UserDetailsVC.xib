@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,11 +23,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailsVC" customModule="Keys_Community" customModuleProvider="target">
             <connections>
+                <outlet property="firsrNameTF" destination="VDN-jq-4ni" id="iHk-C7-gXP"/>
                 <outlet property="firstNameSuperVu" destination="HYT-ps-OH6" id="pyL-2k-0kT"/>
                 <outlet property="lastNameSuperVu" destination="P6T-41-uKF" id="Nrc-aY-P86"/>
+                <outlet property="lastNameTF" destination="brf-BN-z4D" id="8fD-GN-I9W"/>
                 <outlet property="regNoSuperVu" destination="ZQJ-eU-TK9" id="hdg-CZ-n3X"/>
                 <outlet property="uploadPhotoBtn" destination="uSd-Ja-Uiw" id="nCQ-A6-no4"/>
                 <outlet property="userProfileImageVu" destination="17g-sB-9N8" id="vwh-V7-ek0"/>
+                <outlet property="vehicleRegNoTF" destination="vHJ-Oe-27G" id="Roc-Wu-PEj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -449,16 +452,16 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="black_gray_label">
-            <color red="0.31372549019607843" green="0.32941176470588235" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.31400001049041748" green="0.32899999618530273" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gray_black_background">
-            <color red="0.91764705882352937" green="0.91764705882352937" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9179999828338623" green="0.9179999828338623" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gray_color">
             <color red="0.74509803921568629" green="0.75294117647058822" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="label_color">
-            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.11400000005960464" green="0.11400000005960464" blue="0.10599999874830246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primary">
             <color red="1" green="0.75700002908706665" blue="0.0080000003799796104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

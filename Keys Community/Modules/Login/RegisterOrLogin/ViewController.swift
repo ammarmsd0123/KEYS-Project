@@ -51,7 +51,7 @@ class ViewController: UIViewController {
             switch loginSignupBy {
                 case AuthOptions.byMobile:
 //                PhoneSignUpLoginVC()
-                    self?.navigationController?.pushViewController(HomeViewController(), animated: true)
+                    self?.navigationController?.pushViewController(PhoneSignUpLoginVC(), animated: true)
                 default:
                     break
             }

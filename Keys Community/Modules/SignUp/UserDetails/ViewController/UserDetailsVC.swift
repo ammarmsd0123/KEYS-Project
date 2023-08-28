@@ -17,6 +17,11 @@ class UserDetailsVC: BaseVC,UIImagePickerControllerDelegate, UINavigationControl
     @IBOutlet private weak var lastNameSuperVu: UIView!
     @IBOutlet private weak var regNoSuperVu: UIView!
     @IBOutlet private weak var userProfileImageVu: UIImageView!
+    
+    
+    @IBOutlet weak var firsrNameTF: UITextField!
+    @IBOutlet weak var lastNameTF: UITextField!
+    @IBOutlet weak var vehicleRegNoTF: UITextField!
     //MARK: - Private
     
     //MARK: - Public
@@ -104,6 +109,9 @@ class UserDetailsVC: BaseVC,UIImagePickerControllerDelegate, UINavigationControl
     //MARK: - Public Functions
     
     @IBAction func continuePressed(_ sender: UIButton) {
-        self.navigationController?.pushViewController(AddCardVC(), animated: true)
+        
+        UserDetailsVM().createUser(firstName: "Ammar", lastName: "Masood", mobileNumber: Constants.userMobNo ?? "", password: "1111111", type: "mobile",email: nil)
+        
+        // self.navigationController?.pushViewController(AddCardVC(), animated: true)
     }
 }

@@ -14,9 +14,10 @@ struct Enum {
         case expirationDate
     }
     
-    enum HttpMethod : String {
-        case GET
-        case POST
+    enum HTTPMethod: String {
+        case get = "GET"
+        case post = "POST"
+        // Add more HTTP methods as needed
     }
     
     enum APIError : Error {

@@ -11,6 +11,7 @@ class PhoneSignUpLoginVC: UIViewController {
     
     //MARK: - IbOutlets
     
+    @IBOutlet weak var mobNoTextField: UITextField!
     @IBOutlet private weak var verifyBtn: UIButton!
     //MARK: - Private
     
@@ -50,6 +51,8 @@ class PhoneSignUpLoginVC: UIViewController {
     @IBAction func didTapVerify(_ sender: Any) {
         let vc = VerifyOTPVC()
         vc.isSigningUp = self.isSigningUp
+        
+        Constants.userMobNo = mobNoTextField.text
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

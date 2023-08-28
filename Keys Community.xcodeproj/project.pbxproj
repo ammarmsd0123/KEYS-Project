@@ -16,6 +16,11 @@
 		06065F662A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */; };
 		06065F672A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */; };
 		06065F6C2A7FD32C00CA438B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06065F6B2A7FD32C00CA438B /* Enums.swift */; };
+		061185682A8AB79C004F136A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061185672A8AB79C004F136A /* APIManager.swift */; };
+		0611856B2A8AC11A004F136A /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611856A2A8AC11A004F136A /* Endpoints.swift */; };
+		0611856D2A8AC12F004F136A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611856C2A8AC12F004F136A /* Constants.swift */; };
+		061185722A8AC898004F136A /* UserDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061185712A8AC898004F136A /* UserDetailsVM.swift */; };
+		061185742A8ACADC004F136A /* CreateUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061185732A8ACADC004F136A /* CreateUserModel.swift */; };
 		06203AC52A80F13100A866A2 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203AC32A80F13100A866A2 /* CommunityVC.swift */; };
 		06203AC62A80F13100A866A2 /* CommunityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06203AC42A80F13100A866A2 /* CommunityVC.xib */; };
 		06203ACB2A80F2B900A866A2 /* LabelHeaderHFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06203ACA2A80F2B900A866A2 /* LabelHeaderHFTVC.swift */; };
@@ -135,6 +140,11 @@
 		06065F642A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUpdatesOptionHFTVC.swift; sourceTree = "<group>"; };
 		06065F652A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedUpdatesOptionHFTVC.xib; sourceTree = "<group>"; };
 		06065F6B2A7FD32C00CA438B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		061185672A8AB79C004F136A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0611856A2A8AC11A004F136A /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		0611856C2A8AC12F004F136A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		061185712A8AC898004F136A /* UserDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVM.swift; sourceTree = "<group>"; };
+		061185732A8ACADC004F136A /* CreateUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserModel.swift; sourceTree = "<group>"; };
 		06203AC32A80F13100A866A2 /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		06203AC42A80F13100A866A2 /* CommunityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityVC.xib; sourceTree = "<group>"; };
 		06203ACA2A80F2B900A866A2 /* LabelHeaderHFTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHeaderHFTVC.swift; sourceTree = "<group>"; };
@@ -293,9 +303,66 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		061185662A8AB789004F136A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				061185672A8AB79C004F136A /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		061185692A8AC096004F136A /* Helper & Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97BDC3482A34727C00FF18C1 /* Utilities */,
+				EB88A7012A7038A4007C8D6A /* Base Classes */,
+				06065F6A2A7FD31D00CA438B /* Enums */,
+				970200C32A2C618C00D2DC57 /* Extensions */,
+				0611856A2A8AC11A004F136A /* Endpoints.swift */,
+				0611856C2A8AC12F004F136A /* Constants.swift */,
+			);
+			path = "Helper & Extensions";
+			sourceTree = "<group>";
+		};
+		0611856E2A8AC86E004F136A /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				061185702A8AC886004F136A /* ViewModel */,
+				0611856F2A8AC87B004F136A /* ViewController */,
+				061185752A8ACB0B004F136A /* Model */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		0611856F2A8AC87B004F136A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				970200CD2A2CA74900D2DC57 /* UserDetailsVC.swift */,
+				970200CE2A2CA74900D2DC57 /* UserDetailsVC.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		061185702A8AC886004F136A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				061185712A8AC898004F136A /* UserDetailsVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		061185752A8ACB0B004F136A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				061185732A8ACADC004F136A /* CreateUserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		06203AC22A80F10E00A866A2 /* CommunityVC */ = {
 			isa = PBXGroup;
 			children = (
+				06DE9F2A2A9D0A88001A77A1 /* communityVm */,
 				06203AC32A80F13100A866A2 /* CommunityVC.swift */,
 				06203AC42A80F13100A866A2 /* CommunityVC.xib */,
 			);
@@ -506,6 +573,20 @@
 			path = CVCs;
 			sourceTree = "<group>";
 		};
+		06DE9F292A9D0A78001A77A1 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		06DE9F2A2A9D0A88001A77A1 /* communityVm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = communityVm;
+			sourceTree = "<group>";
+		};
 		215A90743C41F69FADD9D90B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,8 +637,7 @@
 			children = (
 				970200C92A2CA61400D2DC57 /* PostCodeVC.swift */,
 				970200CA2A2CA61400D2DC57 /* PostCodeVC.xib */,
-				970200CD2A2CA74900D2DC57 /* UserDetailsVC.swift */,
-				970200CE2A2CA74900D2DC57 /* UserDetailsVC.xib */,
+				0611856E2A8AC86E004F136A /* UserDetails */,
 				975DABCC2A2E250F0063ED92 /* AddCardVC.swift */,
 				975DABCD2A2E250F0063ED92 /* AddCardVC.xib */,
 				975DABD42A2E2AAE0063ED92 /* RegConfirmationVC.swift */,
@@ -640,6 +720,7 @@
 		97BDC34B2A3473FA00FF18C1 /* Community */ = {
 			isa = PBXGroup;
 			children = (
+				06DE9F292A9D0A78001A77A1 /* viewmodels */,
 				06203AD32A8104DF00A866A2 /* CVCs */,
 				06203ACE2A80FE6F00A866A2 /* TVCs */,
 				972F57CC2A35908900889CB3 /* VCs */,
@@ -696,12 +777,10 @@
 		97CAFE802A28DA9200FE155C /* Keys Community */ = {
 			isa = PBXGroup;
 			children = (
-				06065F6A2A7FD31D00CA438B /* Enums */,
+				061185692A8AC096004F136A /* Helper & Extensions */,
+				061185662A8AB789004F136A /* Managers */,
 				06065F542A7F876B00CA438B /* Models */,
-				EB88A7012A7038A4007C8D6A /* Base Classes */,
-				97BDC3482A34727C00FF18C1 /* Utilities */,
 				9722FE0D2A31DFAB0034B976 /* Custom Controls */,
-				970200C32A2C618C00D2DC57 /* Extensions */,
 				970200C02A2C55FD00D2DC57 /* Modules */,
 				97CAFE812A28DA9200FE155C /* AppDelegate.swift */,
 				97CAFE832A28DA9200FE155C /* SceneDelegate.swift */,
@@ -1039,9 +1118,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061185682A8AB79C004F136A /* APIManager.swift in Sources */,
 				06203AD12A80FE9100A866A2 /* BudgetTVC.swift in Sources */,
 				9722FE0B2A31DC940034B976 /* UpcomingCardCVC.swift in Sources */,
 				EB88A6F92A6B0572007C8D6A /* PhoneSignUpLoginVC.swift in Sources */,
+				061185742A8ACADC004F136A /* CreateUserModel.swift in Sources */,
 				06C832722A7CFF1F008A240A /* AlertsTVC.swift in Sources */,
 				EB6D5CC82A6AF5B800ED4144 /* VerifyOTPVC.swift in Sources */,
 				EB88A7032A7038BB007C8D6A /* BaseVC.swift in Sources */,
@@ -1058,17 +1139,20 @@
 				EB915CD72A7581E900303B54 /* EditProfileVC.swift in Sources */,
 				975DABD62A2E2AAE0063ED92 /* RegConfirmationVC.swift in Sources */,
 				9722FE162A3226870034B976 /* ProfileVC.swift in Sources */,
+				061185722A8AC898004F136A /* UserDetailsVM.swift in Sources */,
 				972F57D42A3590CC00889CB3 /* ServicesViewController.swift in Sources */,
 				972F57DE2A35913100889CB3 /* ClubViewController.swift in Sources */,
 				06065F662A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.swift in Sources */,
 				97CAFE822A28DA9200FE155C /* AppDelegate.swift in Sources */,
 				0637079A2A86428A00EF605A /* ProjectsTVC.swift in Sources */,
+				0611856D2A8AC12F004F136A /* Constants.swift in Sources */,
 				063BA3F02A7C3D2C0007BBC1 /* UpcomingCardsTVC.swift in Sources */,
 				06203AC52A80F13100A866A2 /* CommunityVC.swift in Sources */,
 				97CAFE842A28DA9200FE155C /* SceneDelegate.swift in Sources */,
 				06065F5B2A7F922000CA438B /* LabelCVC.swift in Sources */,
 				EB915CC62A73FEC800303B54 /* TableVu.swift in Sources */,
 				970200C52A2C61A000D2DC57 /* UIViewController.swift in Sources */,
+				0611856B2A8AC11A004F136A /* Endpoints.swift in Sources */,
 				06065F582A7F8D2000CA438B /* ExtCollectionVu.swift in Sources */,
 				97F5C4772A30C2F900569EE4 /* HomeViewController.swift in Sources */,
 				06065F562A7F8CBC00CA438B /* GeneralModels.swift in Sources */,
