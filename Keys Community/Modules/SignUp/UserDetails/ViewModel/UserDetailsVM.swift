@@ -9,7 +9,7 @@ import Foundation
 
 class UserDetailsVM {
     
-    func createUser(firstName: String, lastName: String, mobileNumber: String,password: String, type: String, email: String? = nil) {
+    func createUser(firstName: String, lastName: String, mobileNumber: String?,password: String, type: String, email: String? = nil) {
         
         let bodyParams = ["email": email,
                           "mobile_number": mobileNumber,
@@ -23,7 +23,7 @@ class UserDetailsVM {
         APIManager.shared.makeAPICall(endpoint: EndPoints.createUser, httpMethod: .post, decodingModel: CreateUser.self,bodyParams: bodyParams) {[weak self] apiResult in
             switch apiResult {
                 case .success(let model):
-                    print(model)
+                    print("model", model)
                 case .failure(let error):
                     print(error.localizedDescription)
                     

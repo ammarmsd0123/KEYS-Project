@@ -37,7 +37,7 @@ final class APIManager {
         
         // Create the URL request
         var request = URLRequest(url: url)
-        request.httpMethod = httpMethod.rawValue
+        request.httpMethod = "POST"//httpMethod.rawValue
         
         // Add headers if provided
         headers?.forEach { key, value in
@@ -49,15 +49,15 @@ final class APIManager {
             do {
                 let jsonData = try JSONSerialization.data(withJSONObject: bodyParams, options: [])
                 request.httpBody = jsonData
-                print("bodyParams", bodyParams)
+                print("bodyParams", jsonData)
             } catch {
                 completion(.failure(error))
                 return
             }
         }
         
-        
-        print("URLRequest", request)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        print("URLRequestBody", request.httpBody)
 //        print("bodyParams", )
         // Perform the network request
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
@@ -71,6 +71,7 @@ final class APIManager {
             
             do {
                 let result = try JSONDecoder().decode(decodingModel, from: data)
+                print(result)
                 completion(.success(result))
             }
             catch {

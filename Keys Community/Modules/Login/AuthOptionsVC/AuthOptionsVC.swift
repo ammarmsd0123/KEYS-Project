@@ -25,8 +25,15 @@ class AuthOptionsVC: UIViewController {
     @IBOutlet private weak var googleLogin: UIView!
     @IBOutlet private weak var outerVu: UIView!
     
+    @IBOutlet private weak var withMobText: UILabel!
+    @IBOutlet private weak var withEmailText: UILabel!
+    @IBOutlet private weak var withAppleText: UILabel!
+    @IBOutlet private weak var withFbText: UILabel!
+    @IBOutlet private weak var withGoogleText: UILabel!
+    
     // MARK: Public
     var selectedOption: ((_: AuthOptions)->())?
+    public var isSigningUp = false
 
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -39,10 +46,26 @@ class AuthOptionsVC: UIViewController {
         googleLogin.layer.cornerRadius = 10
         outerVu.layer.cornerRadius = 14
         
+        if isSigningUp {
+            setupViewForSignup()
+        }
+        
         let mobileTapGesture = UITapGestureRecognizer(target: self, action: #selector(handleMobileTap(_:)))
         mobileLogin.addGestureRecognizer(mobileTapGesture)
         mobileLogin.isUserInteractionEnabled = true
+        
+        let emailTapGesture = UITapGestureRecognizer(target: self, action: #selector(handleEmaillTap(_:)))
+        emailLogin.addGestureRecognizer(emailTapGesture)
+        emailLogin.isUserInteractionEnabled = true
 
+    }
+    
+    public func setupViewForSignup() {
+        self.withEmailText.text = "Sign up with Email"
+        self.withMobText.text = "Sign up with Mobile"
+        self.withAppleText.text = "Sign up with Apple"
+        self.withGoogleText.text = "Sign up with Google"
+        self.withFbText.text = "Sign up with Facebook"
     }
     
     @IBAction private func dismissVC(){
@@ -54,6 +77,13 @@ class AuthOptionsVC: UIViewController {
             self.selectedOption?(AuthOptions.byMobile)
         })
     }
+    
+    @objc func handleEmaillTap(_ gesture: UITapGestureRecognizer) {
+        dismiss(animated: true, completion: {
+            self.selectedOption?(AuthOptions.byEmail)
+        })
+    }
+
 
 
 }

@@ -110,7 +110,7 @@ class UserDetailsVC: BaseVC,UIImagePickerControllerDelegate, UINavigationControl
     
     @IBAction func continuePressed(_ sender: UIButton) {
         
-        UserDetailsVM().createUser(firstName: "Ammar", lastName: "Masood", mobileNumber: Constants.userMobNo ?? "", password: "1111111", type: "mobile",email: nil)
+        UserDetailsVM().createUser(firstName: firsrNameTF.text ?? "" , lastName: "Masood", mobileNumber: nil, password: "123456", type: "email",email: "hdskjhsh@yopmail.com")
         
         // self.navigationController?.pushViewController(AddCardVC(), animated: true)
     }

@@ -34,6 +34,7 @@ class PhoneSignUpLoginVC: UIViewController {
         print(isSigningUp)
         self.title = isSigningUp == true ? "Sign up with Mobile" : "Login with mobile"
         
+        
         self.verifyBtn.layer.cornerRadius = 10
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(removeKeyboardOnOutsideClick))

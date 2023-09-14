@@ -41,6 +41,8 @@
 		06542AF82A83A86D00D2A334 /* PollTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06542AF62A83A86D00D2A334 /* PollTVC.xib */; };
 		06542AFC2A83C2EE00D2A334 /* PollResultRowCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06542AFA2A83C2EE00D2A334 /* PollResultRowCVC.swift */; };
 		06542AFD2A83C2EE00D2A334 /* PollResultRowCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06542AFB2A83C2EE00D2A334 /* PollResultRowCVC.xib */; };
+		066F0F882AB3326300FF4E2B /* EmailSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066F0F862AB3326300FF4E2B /* EmailSignupVC.swift */; };
+		066F0F892AB3326300FF4E2B /* EmailSignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 066F0F872AB3326300FF4E2B /* EmailSignupVC.xib */; };
 		0682EBCB2A7E388B0000A16D /* EventPostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0682EBC92A7E388B0000A16D /* EventPostTVC.swift */; };
 		0682EBCC2A7E388B0000A16D /* EventPostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0682EBCA2A7E388B0000A16D /* EventPostTVC.xib */; };
 		06C832722A7CFF1F008A240A /* AlertsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C832702A7CFF1F008A240A /* AlertsTVC.swift */; };
@@ -165,6 +167,8 @@
 		06542AF62A83A86D00D2A334 /* PollTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollTVC.xib; sourceTree = "<group>"; };
 		06542AFA2A83C2EE00D2A334 /* PollResultRowCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollResultRowCVC.swift; sourceTree = "<group>"; };
 		06542AFB2A83C2EE00D2A334 /* PollResultRowCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollResultRowCVC.xib; sourceTree = "<group>"; };
+		066F0F862AB3326300FF4E2B /* EmailSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignupVC.swift; sourceTree = "<group>"; };
+		066F0F872AB3326300FF4E2B /* EmailSignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailSignupVC.xib; sourceTree = "<group>"; };
 		0682EBC92A7E388B0000A16D /* EventPostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPostTVC.swift; sourceTree = "<group>"; };
 		0682EBCA2A7E388B0000A16D /* EventPostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventPostTVC.xib; sourceTree = "<group>"; };
 		06C832702A7CFF1F008A240A /* AlertsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsTVC.swift; sourceTree = "<group>"; };
@@ -481,6 +485,42 @@
 			path = PollResultRowCVC;
 			sourceTree = "<group>";
 		};
+		066F0F822AB3313A00FF4E2B /* PostCodeVC */ = {
+			isa = PBXGroup;
+			children = (
+				970200C92A2CA61400D2DC57 /* PostCodeVC.swift */,
+				970200CA2A2CA61400D2DC57 /* PostCodeVC.xib */,
+			);
+			path = PostCodeVC;
+			sourceTree = "<group>";
+		};
+		066F0F832AB3314E00FF4E2B /* AddCardVc */ = {
+			isa = PBXGroup;
+			children = (
+				975DABCC2A2E250F0063ED92 /* AddCardVC.swift */,
+				975DABCD2A2E250F0063ED92 /* AddCardVC.xib */,
+			);
+			path = AddCardVc;
+			sourceTree = "<group>";
+		};
+		066F0F842AB3315A00FF4E2B /* RegConfirmationVC */ = {
+			isa = PBXGroup;
+			children = (
+				975DABD42A2E2AAE0063ED92 /* RegConfirmationVC.swift */,
+				975DABD52A2E2AAE0063ED92 /* RegConfirmationVC.xib */,
+			);
+			path = RegConfirmationVC;
+			sourceTree = "<group>";
+		};
+		066F0F852AB3322C00FF4E2B /* SignUpWithEmail */ = {
+			isa = PBXGroup;
+			children = (
+				066F0F862AB3326300FF4E2B /* EmailSignupVC.swift */,
+				066F0F872AB3326300FF4E2B /* EmailSignupVC.xib */,
+			);
+			path = SignUpWithEmail;
+			sourceTree = "<group>";
+		};
 		0682EBC32A7E36100000A16D /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,13 +675,11 @@
 		970200C82A2CA56900D2DC57 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				970200C92A2CA61400D2DC57 /* PostCodeVC.swift */,
-				970200CA2A2CA61400D2DC57 /* PostCodeVC.xib */,
+				066F0F852AB3322C00FF4E2B /* SignUpWithEmail */,
+				066F0F822AB3313A00FF4E2B /* PostCodeVC */,
 				0611856E2A8AC86E004F136A /* UserDetails */,
-				975DABCC2A2E250F0063ED92 /* AddCardVC.swift */,
-				975DABCD2A2E250F0063ED92 /* AddCardVC.xib */,
-				975DABD42A2E2AAE0063ED92 /* RegConfirmationVC.swift */,
-				975DABD52A2E2AAE0063ED92 /* RegConfirmationVC.xib */,
+				066F0F832AB3314E00FF4E2B /* AddCardVc */,
+				066F0F842AB3315A00FF4E2B /* RegConfirmationVC */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -1046,6 +1084,7 @@
 				0637079B2A86428A00EF605A /* ProjectsTVC.xib in Resources */,
 				06065F672A7FC10D00CA438B /* FeedUpdatesOptionHFTVC.xib in Resources */,
 				EB68AC592A6968A500593233 /* Inter-Light.ttf in Resources */,
+				066F0F892AB3326300FF4E2B /* EmailSignupVC.xib in Resources */,
 				972F57DA2A3590FF00889CB3 /* EventsViewController.xib in Resources */,
 				063707962A863E0400EF605A /* ProjectCVC.xib in Resources */,
 				970200CC2A2CA61400D2DC57 /* PostCodeVC.xib in Resources */,
@@ -1124,6 +1163,7 @@
 				EB88A6F92A6B0572007C8D6A /* PhoneSignUpLoginVC.swift in Sources */,
 				061185742A8ACADC004F136A /* CreateUserModel.swift in Sources */,
 				06C832722A7CFF1F008A240A /* AlertsTVC.swift in Sources */,
+				066F0F882AB3326300FF4E2B /* EmailSignupVC.swift in Sources */,
 				EB6D5CC82A6AF5B800ED4144 /* VerifyOTPVC.swift in Sources */,
 				EB88A7032A7038BB007C8D6A /* BaseVC.swift in Sources */,
 				06203ACB2A80F2B900A866A2 /* LabelHeaderHFTVC.swift in Sources */,
