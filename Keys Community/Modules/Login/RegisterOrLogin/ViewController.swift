@@ -50,7 +50,6 @@ class ViewController: UIViewController {
         authOptionsVC.selectedOption = { [weak self] loginSignupBy in
             switch loginSignupBy {
                 case AuthOptions.byMobile:
-            
                     self?.navigationController?.pushViewController(PhoneSignUpLoginVC(), animated: true)
                 default:
                     break
@@ -64,12 +63,17 @@ class ViewController: UIViewController {
     @IBAction func didTapCreateAccount(_ sender: Any) {
         
         let authOptionsVC = AuthOptionsVC()
+        authOptionsVC.isSigningUp = true
         authOptionsVC.selectedOption = { [weak self] loginSignupBy in
             switch loginSignupBy {
                 case AuthOptions.byMobile:
-                    let vc = RegConfirmationVC()//PhoneSignUpLoginVC()
-//                    vc.isSigningUp = true
+                    let vc = PhoneSignUpLoginVC()
+                    vc.isSigningUp = true
                     self?.navigationController?.pushViewController(vc, animated: true)
+            case AuthOptions.byEmail:
+                    let vc = EmailSignupVC()
+                    self?.navigationController?.pushViewController(vc, animated: true)
+
                 default:
                     break
             }
